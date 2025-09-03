@@ -52,7 +52,7 @@
 </div>
 
 
-<div class="wrapper">
+<div class="">
     <div class="testimonials">
         <h2>{{page.testimonials.title}}</h2>
 
@@ -69,6 +69,7 @@
 </div>
 
 <div class="wrapper">
+    <a id="authors"></a>
     <div class="authors">
         <h2>{{page.authors.title}}</h2>
         <p>{{page.authors.subtitle}}</p>
@@ -84,6 +85,7 @@
 </div>
 
 <div class="wrapper">
+    <a id="chapters"></a>
     <div class="outline">
         <h2>{{page.outline.title}}</h2>
 
@@ -95,10 +97,12 @@
             </div>
             <div>
                 <h4>Lessons</h4>
+                <ul>
                 {{#lessons}}
-                <p>{{title}}</p>
+                <li>{{title}}</li>
                 <!-- TODO IMG -->
                 {{/lessons}}
+                </ul>
             </div>
         {{/page.outline.chapters}}
         </div>
@@ -118,6 +122,7 @@
 </div>
 
 <div class="wrapper">
+    <a id="faq"></a>
     <div class="faq">
         <h2>{{page.faq.title}}</h2>
 
@@ -126,7 +131,7 @@
             <details>
                 <summary>{{question}}</summary>
                 <div>
-                    <p>{{answer}}</p>
+                    <p>{{& answer}}</p>
                 </div>
             </details>
         {{/page.faq.items}}
@@ -135,6 +140,7 @@
 </div>
 
 <div class="wrapper">
+    <a id="contact"></a>
     <div class="ask">
         <h2>{{page.ask.title}}</h2>
         <p>{{page.ask.subtitle}}</p>

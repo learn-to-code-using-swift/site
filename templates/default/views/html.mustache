@@ -73,6 +73,7 @@
 
     <footer class="grid grid-421">
         <div>
+            <h4>{{site.name}}</h4>
             <img
                 width="196px"
                 src="{{baseUrl}}/logos/ltcus.png"
@@ -81,25 +82,24 @@
             >
         </div>
         <div>
-            <h4>Lorem ipsum</h4>
+            <h4>On this page</h4>
             <ul>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
+                {{#site.navigation}}
+                <li><a href="{{url}}">{{label}}</a></li>
+                {{/site.navigation}}
             </ul>
         </div>
         <div>
-            <h4>Lorem ipsum</h4>
+            <h4>Links</h4>
             <ul>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
-                <li><a href="#">foo bar baz</a></li>
+                <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
+                <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
+                <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
+                <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
             </ul>
         </div>
         <div>
-            <h4>Lorem ipsum</h4>
+            <h4>Follow us</h4>
             <ul>
                 <li><a href="#">ICON</a></li>
                 <li><a href="#">ICON</a></li>

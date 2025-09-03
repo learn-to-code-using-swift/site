@@ -12,7 +12,7 @@ hero:
             url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
         secondary: 
             label: "Download sample"
-            url: ""
+            url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
     features:
         - label: "14(+2) chapters"
           icon: ""
@@ -25,13 +25,13 @@ highlights:
     title: "Why you'll love this book"
     sections:
         - title: "Beginner friendly"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+          description: "No experience? No problem. This book is made for absolute beginners — no coding background needed, just curiosity and the desire to learn."
         - title: "Foundational"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+          description: "Learn to code from the ground up. You won’t just follow tutorials — we’ll help you truly understand how programming works, step by step. You’ll learn to think algorithmically and code efficiently."
         - title: "Practical"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+          description: "Learning by doing. Packed with 350+ hands-on exercises so you can apply what you learn and build confidence through practice."
         - title: "Fresh – and will be"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+          description: "Always up-to-date and future-proof. Built for today’s Swift with free updates included, so you can stay current as the language evolves."
 
 
 beta:
@@ -51,7 +51,7 @@ beta:
             url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
         secondary: 
             label: "Download sample"
-            url: ""
+            url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
 
 testimonials:
     title: "What readers say about it"
@@ -69,38 +69,148 @@ testimonials:
 authors:
     title: "Meet the authors"
     subtitle: "Tibor Bödecs & Kitti Bödecs"
-    tibor: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
-    kitti: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+    tibor: "Tibor is a seasoned software developer who has been crafting quality software for decades. He became fascinated by Swift years ago — today, he runs a company built around it, is a member of the Server-Side Swift Workgroup, and writes extensively about the language, whether in books or blogs."
+    kitti: "Kitti studied Sociology and she is a UX researcher and designer. After spending the past few years in a software development company led by engineers and developers, she discovered that she genuinely enjoys diving into technical topics. With her background in bridging the gap between technology and people while breaking down complexity, the idea was born: learning programming shouldn’t feel overwhelming for anyone."
+    summary: "The outcome is this book that offers a reliable, accessible approach to learning Swift, while preserving full technical depth and accuracy."
 
 outline:
     title: "What's inside the book"
 
     chapters:
         - title: "Getting started"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
-          lessons: 
-            - "Introduction"
-            - "Command line"
-            - "Swift"
-            - "Programming"
-            - "IDE"
-        - title: "Getting started"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          description: "This chapter introduces the fundamentals needed to begin programming with Swift. It covers the basics of programming concepts, an overview of the Swift language, and how to use the command line. It also explains Integrated Development Environments (IDEs) and how to choose and set up your development environment."
           lessons: 
             - title: "Introduction"
             - title: "Command line"
             - title: "Swift"
             - title: "Programming"
             - title: "IDE"
-        - title: "Getting started"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+        - title: "The basics"
+          description: "This chapter covers the core building blocks of Swift programming. It explains how to use the print function, write comments, and define constants and variables. It introduces Swift’s standard data types and demonstrates common string operations, including string interpolation."
           lessons: 
-            - title: "Introduction"
-            - title: "Command line"
-            - title: "Swift"
-            - title: "Programming"
-            - title: "IDE"
+            - title: "The print function"
+            - title: "Comments"
+            - title: "Constants & variables"
+            - title: "Standard types"
+            - title: "String operations"
+        - title: "Operators"
+          description: "This chapter provides a detailed overview of Swift’s operators and how they are used in programming. It covers the assignment operator, arithmetic operators, and the remainder operator. It explains comparison and logical operators, as well as how to combine operators to create more complex expressions."
+          lessons: 
+            - title: "Assignment operator"
+            - title: "Arithmetic operators"
+            - title: "Remainder operator"
+            - title: "Comparison operators"
+            - title: "Logical operators"
+            - title: "Combining operators"
+        - title: "Optionals"
+          description: "This chapter introduces optionals and their role in handling situations where data may be missing or invalid. It explains how to read user input with the readLine function and why the returned value is optional. It covers the nil value, working safely with optionals, and writing programs that respond appropriately to user input."
+          lessons: 
+            - title: "The nil value"
+            - title: "The readLine function"
+        - title: "Data types"
+          description: "This chapter explores Swift’s data types beyond the basic single-value types. It covers ranges, arrays, sets, and dictionaries, explaining how and when to use each. It also introduces specialized types such as UInt, Float, and Character for more precise data control."
+          lessons: 
+            - title: "Ranges"
+            - title: "Arrays"
+            - title: "Sets"
+            - title: "Dictionaries"
+            - title: "Other types"
+        - title: "Control flow"
+          description: "This chapter explains how to use control flow to make decisions and repeat actions in Swift programs. It covers conditional statements (if-else and switch-case), looping structures (while, repeat-while, and for-in), and the concept of variable scope. It also introduces nested statements for more complex logic."
+          lessons: 
+            - title: "If-else"
+            - title: "Switch-case"
+            - title: "While"
+            - title: "Repeat-while"
+            - title: "For-in"
+            - title: "Scopes"
+            - title: "Nested statements"
+        - title: "Functions"
+          description: "This chapter introduces functions as a way to organize and reuse code in Swift. It covers defining and calling functions, working with parameters and return values, and understanding function types. It also explains closures and higher-order functions for more advanced use cases."
+          lessons: 
+            - title: "Basics"
+            - title: "Parameters"
+            - title: "Return types"
+            - title: "Closures"
+            - title: "Higher-order functions"
+        - title: "Structs"
+          description: "This chapter introduces structs as a way to create custom data types in Swift. It explains how to define structs, create and use instances, and add properties to store data. It also covers writing methods to give structs behavior and shows how they can help organize code."
+          lessons: 
+            - title: "Basics"
+            - title: "Initialization"
+            - title: "Properties"
+            - title: "Methods"
+        - title: "Enums"
+          description: "This chapter explains how to use enums to define types with a limited set of possible values. It covers basic enum syntax, adding associated values, and using raw values. It also shows how to add methods and properties to enums and use pattern matching for more expressive logic."
+          lessons: 
+            - title: "Basics"
+            - title: "Case values"
+            - title: "Methods and properties"
+            - title: "Pattern matching"
+        - title: "Error handling"
+          description: "This chapter introduces Swift’s error handling system and how to model errors using structs and enums. It covers writing functions that can throw errors and handling them with do, try, and catch. The chapter also explains using guard-else, the Result type, and runtime checks to write safer, more reliable code."
+          lessons: 
+            - title: "Error types"
+            - title: "Do-catch"
+            - title: "Throwing functions"
+            - title: "Guard-else"
+            - title: "The Result type"
+            - title: "Runtime checks"
+        - title: "Packages"
+          description: "This chapter covers how to organize and manage Swift code using packages and package managers. It explains creating executables and libraries, managing access control, and writing tests. It also introduces version control, handling dependencies, and essential tools for real-world project development."
+          lessons: 
+            - title: "Basics"
+            - title: "Executables"
+            - title: "Access control"
+            - title: "Libraries"
+            - title: "Tests"
+            - title: "Version control"
+            - title: "Dependencies"
+            - title: "Tools"
+        - title: "Protocols"
+          description: "This chapter introduces protocols as a way to define shared capabilities that different types can adopt. It covers how to define protocols, make types conform to them, and write flexible, reusable code based on behavior rather than concrete types. The chapter also explores protocol inheritance, extensions, associated types, and built-in protocols."
+          lessons: 
+            - title: "Basics"
+            - title: "Extensions"
+            - title: "Inheritance"
+            - title: "Associated types"
+            - title: "Built in protocols"
+        - title: "Generics"
+          description: "This chapter explains how to use generics to write flexible, reusable, and type-safe code. It covers creating generic functions, types, and protocols, allowing your code to work with different data types without duplication. The chapter also introduces variadic generics for advanced use cases."
+          lessons: 
+            - title: "Functions"
+            - title: "Types"
+            - title: "Protocols"
+            - title: "Variadics"
+        - title: "Classes"
+          description: "This chapter focuses on classes — reference types that let multiple variables share and modify the same instance, making them a core tool for modeling shared state. It also explores related object-oriented programming features like inheritance and polymorphism, while also introducing considerations around memory management such as reference counting and potential retain cycles."
+          lessons: 
+            - title: "Basics"
+            - title: "OOP"
+            - title: "Memory management"
+        - title: "Ownership"
+          description: "This chapter explores Swift’s ownership model, explaining how memory is managed and how value ownership affects mutation and access. It covers concepts like non-copyable types, ownership modifiers, and working with unsafe memory."
+          lessons: 
+            - title: "Basics"
+            - title: "Non-Copyable"
+            - title: "Modifiers"
+            - title: "Unsafe memory"
+        - title: "Concurrency"
+          description: "This chapter introduces concurrency in Swift, covering the fundamentals of asynchronous programming. It explains how to use async-await, manage tasks, and ensure safe data access with actors and the Sendable protocol. The chapter also covers asynchronous sequences."
+          lessons:
+            - title: "Basics"
+            - title: "Async-await"
+            - title: "Tasks"
+            - title: "Sendable"
+            - title: "Actors"
+            - title: "Sequences"
+        - title: "Attributes"
+          description: "This chapter covers advanced Swift features that enhance code expressiveness and performance. It introduces attributes, property wrappers, and key paths to write cleaner and more powerful code. It also explores modern concepts like result builders, macros, and other more advanced attributes."
+          lessons:
+            - title: "Result builders"
+            - title: "Macros"
+            - title: "Others"
+            
 
 callout:
     title: "Make your first step to programming for the early-bird price now"
@@ -111,37 +221,49 @@ callout:
             url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
         secondary: 
             label: "Download sample"
-            url: ""
+            url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
     note: "14 day money-back guarantee"
 
 faq:
     title: "Questions? Look here."
     items: 
-      - question: "Lorem ipsum"
-        answer: "dolor sit amet"
-      - question: "Lorem ipsum"
-        answer: "dolor sit amet"
-      - question: "Lorem ipsum"
-        answer: "dolor sit amet"
-      - question: "Lorem ipsum"
-        answer: "dolor sit amet"
+      - question: "Is this book only for people who want to build iOS apps?"
+        answer: "Not at all! While Swift is well-known for building iOS apps, this book focuses on teaching <strong>foundational programming skills</strong> using Swift — things like variables, functions, conditionals, structs and more. This is a great basis even if Swift is not your final destination, since its syntax is simple and human-friendly, which is great for beginners."
+      - question: "Is there a project or app at the end of the book?"
+        answer: "Although this is not a project-based book, each lesson guide you through solving exercises —  hints and solutions are provided as well. After every chapter, there’s a closing collection of exercises too. You will finish each chapter with a small win and something to reflect on your progress."
+      - question: "Will this book help me get a job as a developer?"
+        answer: "While it won’t make you job-ready on its own, this book lays a strong foundation. It’s your <strong>first step</strong> toward a career in tech — and a great companion to more advanced resources later. We believe that following along an expert and mimic what you see from the first second might sound faster, but far less reliable as a foundation and might leave you disappointed when you try to build something for the first time on your own."
+      - question: "What makes Swift a good language for beginners?"
+        answer: "Swift is designed to be <strong>safe, modern, and readable</strong>. Its syntax is friendly for newcomers, and it’s used by Apple across all its platforms. That means the skills you learn here are practical and future-proof."
+      - question: "Can I ask questions if I get stuck?"
+        answer: "Yes! We love hearing from readers. You can reach out to us on X, Mastodon or Bluesky, or via email. We’re working on building a small community for learners too."
+      - question: "Can I use Windows or Linux to follow this book?"
+        answer: "Yes, absolutely! Although Swift is the official programming language developed by Apple, thanks to its continuous evolution it’s an all purpose language. You can use any operating system."
+      - question: "How is this book different from other Swift programming books?"
+        answer: "Most of the books out there focus on people who have some experience with programming. Our book is well-structured, paced, and written specifically for absolute beginners, with clear language, explanations, and a learning journey that feels human and fun."
+      - question: "Do I still need to learn programming in the age of AI?"
+        answer: "Yes — more than ever. AI can assist you, but it can’t think for you. Knowing how to code gives you creative control and helps you spot mistakes AI tools might introduce."
+      - question: "What’s the point of reading a programming book when I have AI?"
+        answer: "A book gives you <strong>structure, pacing, and progression. It’s built thoughtfully.</strong> AI is great for answering questions, but it’s not able to teach a whole programming language in a trustworthy, reasonable way from the foundations to the more advanced concepts."
+      - question: "Can I switch to other languages after learning Swift?"
+        answer: "Absolutely. Once you understand Swift, moving to languages like JavaScript, Python, or Kotlin is much easier. Learning your <strong>first language well</strong> is the hardest part — and Swift is a great first step."
 
 ask:
     title: "Ask us"
     subtitle: "We'd love to hear from you"
     channels:
         - title: "Join us on Discord"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          description: "Want to make an impact? Want to get to know others in the same shoe as you? Join a living community on Discord to learn and shape the book together. Find mates to motivate each other. Ask questions if you get stuck and get free mentoring in exchange for your precious feedback."
           icons: 
             - link: "Discord"
         - title: "Follow us on X, Bluesky and Mastodon"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          description: "Follow us on social platforms for Swift related content and updates. We’re sharing complementary educational stuff on programming — pieces of info, visuals, and of course sneak peaks into what we’re currently working on."
           icons: 
             - link: "X"
             - link: "Bluesky"
             - link: "Mastodon"
         - title: "Prefer to drop an email?"
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          description: "Write us an e-mail to learntocodeusingswift@gmail.com. Send us your thoughts on the book, ask questions , or show us your dog. "
           icons:
             
 cta:
@@ -153,5 +275,5 @@ cta:
             url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
         secondary: 
             label: "Download sample"
-            url: ""
+            url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
     note: "14 day money-back guarantee"
