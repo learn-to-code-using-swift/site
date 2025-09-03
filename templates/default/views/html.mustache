@@ -39,11 +39,74 @@
 
 <body>
 
+    <header id="navigation">
+        <a href="/">
+            <picture>
+                <img
+                    src="{{baseUrl}}/logos/ltcus.png"
+                    alt="Logo of {{site.name}}"
+                    title="{{site.name}}"
+                >
+            </picture>
+        </a>
+        <nav>
+            <input type="checkbox" id="primary-menu-button" name="menu-button" class="menu-button">
+            <label for="primary-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+            <div class="menu-items">
+                {{#site.navigation}}
+                <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+                {{/site.navigation}}
+            </div>
+        </nav>
+    </header>
+
+
     <main id="page-container">
     {{$main}}{{/main}}
     </main>
 
-    <footer>
+    <footer class="grid grid-421">
+        <div>
+            <img
+                width="196px"
+                src="{{baseUrl}}/logos/ltcus.png"
+                alt="Logo of {{site.name}}"
+                title="{{site.name}}"
+            >
+        </div>
+        <div>
+            <h4>Lorem ipsum</h4>
+            <ul>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lorem ipsum</h4>
+            <ul>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+                <li><a href="#">foo bar baz</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lorem ipsum</h4>
+            <ul>
+                <li><a href="#">ICON</a></li>
+                <li><a href="#">ICON</a></li>
+                <li><a href="#">ICON</a></li>
+                <li><a href="#">ICON</a></li>
+            </ul>
+        </div>
         
     </footer>
 

@@ -12,3 +12,6 @@ navigation:
       url: "/#faq"
     - label: "Contact"
       url: "/#contact"
+
+footer:
+    

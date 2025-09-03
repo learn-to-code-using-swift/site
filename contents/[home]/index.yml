@@ -1,0 +1,157 @@
+#title: ""
+description: ""
+views: 
+    html: pages.home
+
+hero:
+    title: "Learn To Code Using Swift"
+    subtitle: "The absolute beginner's programming book"
+    buttons: 
+        primary: 
+            label: "Get the book for $49"
+            url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
+        secondary: 
+            label: "Download sample"
+            url: ""
+    features:
+        - label: "14(+2) chapters"
+          icon: ""
+        - label: "700+ pages"
+          icon: ""
+        - label: "350+ exercises"
+          icon: ""
+
+highlights:
+    title: "Why you'll love this book"
+    sections:
+        - title: "Beginner friendly"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+        - title: "Foundational"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+        - title: "Practical"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+        - title: "Fresh – and will be"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem. "
+
+
+beta:
+    caption: "Now available in beta"
+    title: "Learn to code with rock solid foundations"
+
+    list:
+        - title: "Learn Swift on any computer"
+          description: "Teaching you the Swift language itself – so you can start coding on Windows, Linux or any laptop you already own"
+        - title: "Practice and theory hand in hand"
+          description: "Gain confidence and hands-on experience by hundreds of exercises and mini projects"
+        - title: "Teaches essential skills in the age of LLMs"
+          description: "Be strong with algorithmical thinking and reasoning skills. Don't be misguided by AI, leverage it for your needs as an expert"
+    buttons: 
+        primary: 
+            label: "Get the book for $49"
+            url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
+        secondary: 
+            label: "Download sample"
+            url: ""
+
+testimonials:
+    title: "What readers say about it"
+    quotes:
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Name"
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Name"
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Name"
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Name"
+
+
+authors:
+    title: "Meet the authors"
+    subtitle: "Tibor Bödecs & Kitti Bödecs"
+    tibor: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+    kitti: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+
+outline:
+    title: "What's inside the book"
+
+    chapters:
+        - title: "Getting started"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          lessons: 
+            - "Introduction"
+            - "Command line"
+            - "Swift"
+            - "Programming"
+            - "IDE"
+        - title: "Getting started"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          lessons: 
+            - title: "Introduction"
+            - title: "Command line"
+            - title: "Swift"
+            - title: "Programming"
+            - title: "IDE"
+        - title: "Getting started"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          lessons: 
+            - title: "Introduction"
+            - title: "Command line"
+            - title: "Swift"
+            - title: "Programming"
+            - title: "IDE"
+
+callout:
+    title: "Make your first step to programming for the early-bird price now"
+    subtitle: "Clear explanations and step-by-step progress"
+    buttons: 
+        primary: 
+            label: "Get the book for $49"
+            url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
+        secondary: 
+            label: "Download sample"
+            url: ""
+    note: "14 day money-back guarantee"
+
+faq:
+    title: "Questions? Look here."
+    items: 
+      - question: "Lorem ipsum"
+        answer: "dolor sit amet"
+      - question: "Lorem ipsum"
+        answer: "dolor sit amet"
+      - question: "Lorem ipsum"
+        answer: "dolor sit amet"
+      - question: "Lorem ipsum"
+        answer: "dolor sit amet"
+
+ask:
+    title: "Ask us"
+    subtitle: "We'd love to hear from you"
+    channels:
+        - title: "Join us on Discord"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          icons: 
+            - link: "Discord"
+        - title: "Follow us on X, Bluesky and Mastodon"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          icons: 
+            - link: "X"
+            - link: "Bluesky"
+            - link: "Mastodon"
+        - title: "Prefer to drop an email?"
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet posuere, nulla urna malesuada odio, nec dapibus sapien risus vitae lorem."
+          icons:
+            
+cta:
+    title: "Start coding with Swift"
+    subtitle: "Start coding with Swift"
+    buttons: 
+        primary: 
+            label: "Get the book for $49"
+            url: "https://theswiftdev.gumroad.com/l/learn-to-code-using-swift"
+        secondary: 
+            label: "Download sample"
+            url: ""
+    note: "14 day money-back guarantee"

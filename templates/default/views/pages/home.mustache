@@ -2,10 +2,170 @@
 {{$main}}
 
 <div class="wrapper">
-    <article>
-        {{& page.contents.html}}
+    <div class="hero">
+        <h1>{{page.hero.title}}</h1>
+        <p>{{page.hero.subtitle}}</p>
 
-    </article>
+        <a href="{{page.hero.buttons.secondary.url}}" class="button secondary">{{page.hero.buttons.secondary.label}}</a>
+        <a href="{{page.hero.buttons.primary.url}}" class="button primary">{{page.hero.buttons.primary.label}}</a>
+
+        <p>
+        {{#page.hero.features}}
+            <span>{{label}}</span>
+        {{/page.hero.features}}
+        </p>
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div class="hero">
+        <h2>{{page.highlights.title}}</h2>
+
+        <div class="grid grid-221">
+        {{#page.highlights.sections}}
+            <div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+        {{/page.highlights.sections}}
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="beta">
+        <!-- TODO IMG -->
+        <small>{{page.beta.caption}}</small>
+        <h2>{{page.beta.title}}</h2>
+        
+        <dl>
+        {{#page.beta.list}}
+            <dt>{{title}}</dt>
+            <dd>{{description}}</dd>
+        {{/page.beta.list}}
+        </dl>
+
+        <a href="{{page.beta.buttons.secondary.url}}" class="button secondary">{{page.beta.buttons.secondary.label}}</a>
+        <a href="{{page.beta.buttons.primary.url}}" class="button primary">{{page.beta.buttons.primary.label}}</a>
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div class="testimonials">
+        <h2>{{page.testimonials.title}}</h2>
+
+        <div class="grid grid-421">
+        {{#page.testimonials.quotes}}
+            <div>
+                <h3>{{quote}}</h3>
+                <p>{{name}}</p>
+                <!-- TODO IMG -->
+            </div>
+        {{/page.testimonials.quotes}}
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="authors">
+        <h2>{{page.authors.title}}</h2>
+        <p>{{page.authors.subtitle}}</p>
+
+        <div>
+            <p>{{page.authors.tibor}}</p>
+            <p>{{page.authors.kitti}}</p>
+            <p>{{page.authors.summary}}</p>
+        </div>
+
+        <!-- TODO IMG -->
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="outline">
+        <h2>{{page.outline.title}}</h2>
+
+        <div class="grid grid-221">
+        {{#page.outline.chapters}}
+            <div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+            <div>
+                <h4>Lessons</h4>
+                {{#lessons}}
+                <p>{{title}}</p>
+                <!-- TODO IMG -->
+                {{/lessons}}
+            </div>
+        {{/page.outline.chapters}}
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="callout">
+        <h2>{{page.callout.title}}</h2>
+        <p>{{page.callout.subtitle}}</p>
+        
+        <a href="{{page.callout.buttons.secondary.url}}" class="button secondary">{{page.callout.buttons.secondary.label}}</a>
+        <a href="{{page.callout.buttons.primary.url}}" class="button primary">{{page.callout.buttons.primary.label}}</a>
+        
+        <p><small>{{page.callout.note}}</small></p>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="faq">
+        <h2>{{page.faq.title}}</h2>
+
+        <div class="">
+        {{#page.faq.items}}
+            <details>
+                <summary>{{question}}</summary>
+                <div>
+                    <p>{{answer}}</p>
+                </div>
+            </details>
+        {{/page.faq.items}}
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="ask">
+        <h2>{{page.ask.title}}</h2>
+        <p>{{page.ask.subtitle}}</p>
+
+        <div class="grid grid-221">
+        {{#page.ask.channels}}
+            <div>
+                {{#icons}}
+                <p>{{link}}</p>
+                <!-- TODO IMG -->
+                {{/icons}}
+            </div>
+            <div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+        {{/page.ask.channels}}
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="cta">
+        <h2>{{page.cta.title}}</h2>
+        <p>{{page.cta.subtitle}}</p>
+        
+        <a href="{{page.cta.buttons.secondary.url}}" class="button secondary">{{page.cta.buttons.secondary.label}}</a>
+        <a href="{{page.cta.buttons.primary.url}}" class="button primary">{{page.cta.buttons.primary.label}}</a>
+        
+        <p><small>{{page.cta.note}}</small></p>
+    </div>
 </div>
 
 {{/main}}
