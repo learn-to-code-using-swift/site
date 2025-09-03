@@ -1,0 +1,9 @@
+id: page
+default: true
+paths: 
+    - contents
+
+properties:
+    title:
+        type: string
+        required: false

@@ -1,0 +1,40 @@
+id: html
+definesType: false
+
+assets:
+    behaviors:
+        - id: copy
+    properties:
+        - action: add
+          property: css
+          resolvePath: true
+          input:
+              name: "style"
+              ext: "css"
+
+queries: 
+
+
+dataTypes:
+    date:
+        formats:
+            full: 
+                format: "yyyy/MM/dd"
+            year: 
+                format: "y"
+
+contentTypes: 
+    include:
+        - page
+
+engine: 
+    id: mustache
+    options:
+        contentTypes: 
+            page:
+                view: "pages.default"
+
+output:
+    path: "{{slug}}"
+    file: index
+    ext: html
