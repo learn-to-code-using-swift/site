@@ -105,17 +105,21 @@
 <div class="authors">
     <div class="wrapper">
         <a id="authors"></a>
-        <div class="authors">
-            <h2>{{page.authors.title}}</h2>
-            <p>{{page.authors.subtitle}}</p>
-
+        <div class="grid grid-211">
             <div>
-                <p>{{page.authors.tibor}}</p>
-                <p>{{page.authors.kitti}}</p>
-                <p>{{page.authors.summary}}</p>
-            </div>
+                <span class="caption">Authors</span>
+                <h2>{{page.authors.title}}</h2>
+                <p>{{page.authors.subtitle}}</p>
 
-            <!-- TODO IMG -->
+                <div>
+                    <p>{{page.authors.tibor}}</p>
+                    <p>{{page.authors.kitti}}</p>
+                    <p>{{page.authors.summary}}</p>
+                </div>
+            </div>
+            <div>
+                <img src="{{baseUrl}}/logos/ltcus.png" alt="{{name}}">
+            </div>
         </div>
     </div>
 </div>

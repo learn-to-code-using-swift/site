@@ -282,7 +282,6 @@ strong {
 }
 
 .hero {
-    /* border-top: 1px solid #000; */
     background: url(../images/Hero.png);
     background-size: cover;
     background-position: top right;
@@ -326,7 +325,7 @@ strong {
     .hero .wrapper img {
         width: 400px;
         position: absolute;
-        top: 0px;
+        top: -100px;
         left: -260px;
     }
     
@@ -508,4 +507,8 @@ strong {
     line-height: var(--line-height);
     color: var(--color-text-secondary);
     margin: 0;
+}
+
+.authors .grid img {
+    width: 100%;
 }
