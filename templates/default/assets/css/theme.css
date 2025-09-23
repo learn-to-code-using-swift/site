@@ -230,7 +230,7 @@ strong {
 }
 @media screen and (min-width: 600px) {
     #navigation {
-        margin: 20px;
+        padding: 20px;
     }
     #navigation #primary-menu-button ~ label {
         display: none;
@@ -282,11 +282,13 @@ strong {
 }
 
 .hero {
-    text-align: center;
+    /* border-top: 1px solid #000; */
     background: url(../images/Hero.png);
     background-size: cover;
     background-position: top right;
+    background-repeat: no-repeat;
     padding-bottom: 60px;
+    text-align: center;
 }
 .hero .wrapper {
     max-width: 720px;
@@ -324,7 +326,7 @@ strong {
     .hero .wrapper img {
         width: 400px;
         position: absolute;
-        top: -100px;
+        top: 0px;
         left: -260px;
     }
     
