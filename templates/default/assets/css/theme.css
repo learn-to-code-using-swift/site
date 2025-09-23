@@ -15,6 +15,7 @@
     --font-size-24-pixel: 1.5rem; 
     --font-size-20-pixel: 1.25rem;
     --font-size-16-pixel: 1rem;
+    --font-size-14-pixel: 0.875rem;
 
     --line-height: 120%;
     
@@ -83,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 0;
     text-wrap: balance;
-    text-transform: uppercase;
     white-space: pre-line; 
     
 }
@@ -250,8 +250,9 @@ strong {
 }
 
 .button {
-    margin: 10px;
+    text-align: center;
     padding: 10px 20px;
+    margin: 0;
 }
 .button.primary {
     color: #f5f5f5;
@@ -290,6 +291,7 @@ strong {
 .hero .wrapper {
     max-width: 720px;
 }
+
 .hero .logo-box {
     text-align: center;
     position: relative;
@@ -309,6 +311,9 @@ strong {
     .button {
         display: inline-block;
     }
+    .button ~ .button {
+        margin-left: 20px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .hero .logo-box {
@@ -326,6 +331,7 @@ strong {
 }
 .hero .wrapper h1 {
     font-family: var(--font-family-afacad);
+    text-transform: uppercase;
     margin-top: 0;
     margin-top: 60px;
 }
@@ -336,16 +342,168 @@ strong {
     font-weight: 400;
     margin-bottom: 40px;
 }
+.hero .wrapper .features {
+    margin-top: 80px;
+}
 .hero .wrapper span {
     font-family: var(--font-family-afacad);
     font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
     font-weight: 400;
 }
-
 
 
 .caption {
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #26252A;
+}
+
+.highlights {
+    background: url(../images/Hero.png);
+    background-size: cover;
+    background-position: top right;
+    padding: 80px 0;
+}
+.highlights h2 {
+    max-width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .highlights h2 {
+        max-width: 50%;
+    }
+}
+.highlights .grid {
+    margin-top: 40px;
+}
+.highlights .grid h3 {
+    font-size: var(--font-size-28-pixel);
+    line-height: var(--line-height);
+    border-left: 1px dashed var(--color-border-secondary);
+    padding-left: 20px;
+}
+.highlights .grid p {
+    font-size: var(--font-size-20-pixel);
+    line-height: 135%;
+}
+
+
+.book {
+    background: url(../images/Hero.png);
+    background-size: cover;
+    background-position: top right;
+    padding: 80px 0;   
+}
+.book > .wrapper > h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+.book > .wrapper > p {
+    font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 0;
+}
+.book > .wrapper .grid {
+    margin-top: 80px;
+}
+.book > .wrapper img {
+    display: block;
+    width: 100%;
+}
+.book > .wrapper dl {
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.book > .wrapper dl dt {
+    font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-24-pixel);
+    line-height: var(--line-height);
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+    position: relative;   
+}
+.book > .wrapper dl dt::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 6px;
+    width: 28px;
+    height: 27px;
+    background: url("../images/Polygon.png") no-repeat center / contain;
+}
+@media screen and (min-width: 600px) {
+    .book > .wrapper dl {
+        margin-left: 0;
+    }
+}
+.book > .wrapper dl dd {
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
+    margin-bottom: 40px;
+}
+
+
+.testimonials, .authors, .chapters, .callout, .faq, .contact {
+    background: url(../images/Hero.png);
+    background-size: cover;
+    background-position: top right;
+    padding: 80px 0;   
+}
+
+.testimonials h2 {
+    margin-bottom: 80px;
+}
+
+.testimonials h2 span {
+    color: var(--color-border-secondary);
+}
+
+@media screen and (min-width: 600px) {
+    .testimonials h2 {
+        max-width: 50%;
+    }
+}
+
+.testimonials .grid > * {
+    border: 1px dashed var(--color-border-secondary);
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+.testimonials .grid .source {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center; 
+}
+.testimonials .grid img {
+    width: 40px;
+    background: #eee;
+    margin: 0 10px;
+}
+.testimonials .grid .source span.name {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
+    display: block;
+}
+
+.testimonials .grid .source span.info {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-14-pixel);
+    line-height: var(--line-height);
+    display: block;
+}
+
+.testimonials .grid p {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
+    color: var(--color-text-secondary);
+    margin: 0;
 }

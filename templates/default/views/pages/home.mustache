@@ -30,7 +30,7 @@
         <a href="{{page.hero.buttons.secondary.url}}" class="button secondary">{{page.hero.buttons.secondary.label}}</a>
         <a href="{{page.hero.buttons.primary.url}}" class="button primary">{{page.hero.buttons.primary.label}}</a>
 
-        <p>
+        <p class="features">
         {{#page.hero.features}}
             <span>{{label}}</span>
         {{/page.hero.features}}
@@ -39,100 +39,118 @@
 </div>
 
 
-<div class="wrapper">
-    <div class="highlights">
+<div class="highlights">
+    <div class="wrapper">
         <span class="caption">{{page.highlights.caption}}</span>
         <h2>{{page.highlights.title}}</h2>
 
-        <div class="grid grid-221">
+        <div class="grid grid-311">
         {{#page.highlights.sections}}
             <div>
-                <h3>{{title}}</h3>
-                <p>{{description}}</p>
+                {{#title}}<h3>{{.}}</h3>{{/title}}
+                {{#description}}<p>{{.}}</p>{{/description}}
             </div>
         {{/page.highlights.sections}}
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <div class="beta">
-        <!-- TODO IMG -->
-        <small>{{page.beta.caption}}</small>
+<div class="book">
+    <div class="wrapper">
+        <p>{{page.beta.caption}}</p>
         <h2>{{page.beta.title}}</h2>
         
-        <dl>
-        {{#page.beta.list}}
-            <dt>{{title}}</dt>
-            <dd>{{description}}</dd>
-        {{/page.beta.list}}
-        </dl>
+        <div class="grid grid-211">
+            <div>
+                <img src="{{baseUrl}}/images/Book.png" alt="{{page.beta.title}}">
+            </div>
 
-        <a href="{{page.beta.buttons.secondary.url}}" class="button secondary">{{page.beta.buttons.secondary.label}}</a>
-        <a href="{{page.beta.buttons.primary.url}}" class="button primary">{{page.beta.buttons.primary.label}}</a>
+            <div>
+                <dl>
+                {{#page.beta.list}}
+                    <dt>{{title}}</dt>
+                    <dd>{{description}}</dd>
+                {{/page.beta.list}}
+                </dl>
+
+                <a href="{{page.beta.buttons.secondary.url}}" class="button secondary">{{page.beta.buttons.secondary.label}}</a>
+                <a href="{{page.beta.buttons.primary.url}}" class="button primary">{{page.beta.buttons.primary.label}}</a>
+            </div>
+        </div>
     </div>
 </div>
 
 
-<div class="">
-    <div class="testimonials">
-        <h2>{{page.testimonials.title}}</h2>
+<div class="testimonials">
+    <div class="wrapper">
+        <span class="caption">Testimonials</span>
+        <h2>What<br><span>readers</span><br>say about it</h2>
 
-        <div class="grid grid-421">
+        <div class="grid grid-311">
         {{#page.testimonials.quotes}}
             <div>
-                <h3>{{quote}}</h3>
-                <p>{{name}}</p>
-                <!-- TODO IMG -->
+                <div class="source">
+                    <img src="{{baseUrl}}/logos/ltcus.png" alt="{{name}}">
+                    <div>
+                        <span class="name">{{name}}</span>
+                        <span class="info">{{name}}</span>
+                    </div>
+                </div>
+                <p>"{{quote}}"</p>
             </div>
         {{/page.testimonials.quotes}}
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <a id="authors"></a>
-    <div class="authors">
-        <h2>{{page.authors.title}}</h2>
-        <p>{{page.authors.subtitle}}</p>
+<div class="authors">
+    <div class="wrapper">
+        <a id="authors"></a>
+        <div class="authors">
+            <h2>{{page.authors.title}}</h2>
+            <p>{{page.authors.subtitle}}</p>
 
-        <div>
-            <p>{{page.authors.tibor}}</p>
-            <p>{{page.authors.kitti}}</p>
-            <p>{{page.authors.summary}}</p>
-        </div>
-
-        <!-- TODO IMG -->
-    </div>
-</div>
-
-<div class="wrapper">
-    <a id="chapters"></a>
-    <div class="outline">
-        <h2>{{page.outline.title}}</h2>
-
-        <div class="grid grid-221">
-        {{#page.outline.chapters}}
             <div>
-                <h3>{{title}}</h3>
-                <p>{{description}}</p>
+                <p>{{page.authors.tibor}}</p>
+                <p>{{page.authors.kitti}}</p>
+                <p>{{page.authors.summary}}</p>
             </div>
-            <div>
-                <h4>Lessons</h4>
-                <ul>
-                {{#lessons}}
-                <li>{{title}}</li>
-                <!-- TODO IMG -->
-                {{/lessons}}
-                </ul>
-            </div>
-        {{/page.outline.chapters}}
+
+            <!-- TODO IMG -->
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <div class="callout">
+<div class="chapters">
+    <div class="wrapper">
+        <a id="chapters"></a>
+        <div class="outline">
+            <h2>{{page.outline.title}}</h2>
+
+            <div class="grid grid-221">
+            {{#page.outline.chapters}}
+                <div>
+                    <h3>{{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+                <div>
+                    <h4>Lessons</h4>
+                    <ul>
+                    {{#lessons}}
+                    <li>{{title}}</li>
+                    <!-- TODO IMG -->
+                    {{/lessons}}
+                    </ul>
+                </div>
+            {{/page.outline.chapters}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="callout">
+    <div class="wrapper">
         <h2>{{page.callout.title}}</h2>
         <p>{{page.callout.subtitle}}</p>
         
@@ -143,49 +161,53 @@
     </div>
 </div>
 
-<div class="wrapper">
-    <a id="faq"></a>
-    <div class="faq">
-        <h2>{{page.faq.title}}</h2>
+<div class="faq">
+    <div class="wrapper">
+        <a id="faq"></a>
+        <div class="faq">
+            <h2>{{page.faq.title}}</h2>
 
-        <div class="">
-        {{#page.faq.items}}
-            <details>
-                <summary>{{question}}</summary>
+            <div class="">
+            {{#page.faq.items}}
+                <details>
+                    <summary>{{question}}</summary>
+                    <div>
+                        <p>{{& answer}}</p>
+                    </div>
+                </details>
+            {{/page.faq.items}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+    <div class="wrapper">
+        <a id="contact"></a>
+        <div class="ask">
+            <h2>{{page.ask.title}}</h2>
+            <p>{{page.ask.subtitle}}</p>
+
+            <div class="grid grid-221">
+            {{#page.ask.channels}}
                 <div>
-                    <p>{{& answer}}</p>
+                    {{#icons}}
+                    <p>{{link}}</p>
+                    <!-- TODO IMG -->
+                    {{/icons}}
                 </div>
-            </details>
-        {{/page.faq.items}}
+                <div>
+                    <h3>{{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+            {{/page.ask.channels}}
+            </div>
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <a id="contact"></a>
-    <div class="ask">
-        <h2>{{page.ask.title}}</h2>
-        <p>{{page.ask.subtitle}}</p>
-
-        <div class="grid grid-221">
-        {{#page.ask.channels}}
-            <div>
-                {{#icons}}
-                <p>{{link}}</p>
-                <!-- TODO IMG -->
-                {{/icons}}
-            </div>
-            <div>
-                <h3>{{title}}</h3>
-                <p>{{description}}</p>
-            </div>
-        {{/page.ask.channels}}
-        </div>
-    </div>
-</div>
-
-<div class="wrapper">
-    <div class="cta">
+<div class="cta">
+    <div class="wrapper">
         <h2>{{page.cta.title}}</h2>
         <p>{{page.cta.subtitle}}</p>
         

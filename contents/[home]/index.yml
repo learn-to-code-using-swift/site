@@ -25,10 +25,14 @@ highlights:
     caption: "Summary"
     title: "Why you'll love this book"
     sections:
+        - title: null
+          description: null
         - title: "Beginner friendly"
           description: "No experience? No problem. This book is made for absolute beginners — no coding background needed, just curiosity and the desire to learn."
         - title: "Foundational"
           description: "Learn to code from the ground up. You won’t just follow tutorials — we’ll help you truly understand how programming works, step by step. You’ll learn to think algorithmically and code efficiently."
+        - title: null
+          description: null
         - title: "Practical"
           description: "Learning by doing. Packed with 350+ hands-on exercises so you can apply what you learn and build confidence through practice."
         - title: "Fresh – and will be"
