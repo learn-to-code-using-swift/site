@@ -1,84 +1,43 @@
 :root {
-    --swift: #F05138;
+    --color-text-primary: #b5b4b6;
+    --color-text-secondary: #fff;
+    --color-background-primary: #000;
+    --color-border-primary: #999;
+    --color-border-secondary: #EB6A24;
+
+    --font-family-afacad: "Afacad", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-family-aldrich: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    --font-size-72-pixel: 4.5rem;
+    --font-size-48-pixel: 3rem; 
+    --font-size-32-pixel: 2rem; 
+    --font-size-28-pixel: 1.75rem;
+    --font-size-24-pixel: 1.5rem; 
+    --font-size-20-pixel: 1.25rem;
+    --font-size-16-pixel: 1rem;
+
+    --line-height: 120%;
     
     --color-primary: #DE5D43;
-    --color-border: #C2543F;
+    --color-border: #E3755F;
     --color-secondary: #FBB040;
     --color-tertiary: #FF3527;
+
+    --color-button-text: #DE5D43;
+    --color-button-background: #170907;
+    --color-button-border: #351610;
+
     
-    --color-button-text: #CD563E;
-    --color-button-background: #FAEEEB;
-    --color-button-border: #F4D8D1;
 
-    --color-heading-primary: #222;
-    
-    --color-text-primary: #606060;
-    --color-background-primary: #fff;
-    --color-border-primary: #f9f9f9;
-
-    --color-text-secondary: #444;
-    --color-background-secondary: #e6e6e6;
-    --color-border-secondary: #ccc;
-
-    --color-text-tertiary: #222;
-    --color-background-tertiary: #d0d0d0;
-    --color-border-tertiary: #f9f9f9;
-
-    --color-text-panel: #606060;
-    --color-background-panel: rgba(204, 204, 204, 0.1);
-    --color-border-panel: rgba(204, 204, 204, 0.9);
-    
-    --color-text-card: #606060;
-    --color-background-card: #f6f6f6;
-    --color-border-card: rgba(204, 204, 204, 0.9);
-}
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #DE5D43;
-        --color-border: #E3755F;
-        --color-secondary: #FBB040;
-        --color-tertiary: #FF3527;
-
-        --color-button-text: #DE5D43;
-        --color-button-background: #170907;
-        --color-button-border: #351610;
-
-        --color-heading-primary: #c9c9c9;
-        
-        --color-text-primary: #909090;
-        --color-background-primary: #000;
-        --color-border-primary: #101010;
-
-        --color-text-secondary: #d0d0d0;
-        --color-background-secondary: #222;
-        --color-border-secondary: #666;
-
-        --color-text-tertiary: #909090;
-        --color-background-tertiary: #444;
-        --color-border-tertiary: #101010;  
-        
-        --color-text-panel: #606060;
-        --color-background-panel: rgba(51, 51, 51, 0.1);
-        --color-border-panel: rgba(102, 102, 102, 0.8);
-
-        --color-text-card: #606060;
-        --color-background-card: #101010;
-        --color-border-card: rgba(102, 102, 102, 0.8);
-    }
-}
-
-:root {
-    --font-size: 1.25rem;
-    --line-height: 1.5rem;
 }
 @media screen and (min-width: 600px) {
     :root {
-        --font-size: 1.25rem;
+        --font-size-16-pixel: 1rem;
     }
 }
 @media screen and (min-width: 900px) {
     :root {
-        --font-size: 1.5rem;
+        --font-size-16-pixel: 1rem;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -101,69 +60,63 @@
     margin: 0;
     padding: 0
 }
-html,body {
+html, body {
     overflow-x: hidden;
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
 }
 html {
-    font-size: var(--font-size);
+    font-size: var(--font-size-16-pixel);
 }
 body {
-    font-family: "Afacad", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: var(--font-family-afacad);
     line-height: var(--line-height);
 }
 main {
     min-height: 100vh;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-heading-primary);
+    color: var(--color-text-secondary);
+    font-family: var(--font-family-aldrich);
+    line-height: var(--line-height);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-wrap: balance;
+    text-transform: uppercase;
+    white-space: pre-line; 
+    
 }
 h1 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
-    white-space: pre-line; 
+    font-size: var(--font-size-72-pixel);
 }
 h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: var(--font-size-48-pixel);
 }
 h3 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: var(--font-size-32-pixel);
 }
 h4 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: var(--font-size-28-pixel);
 }
 h5 {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: var(--font-size-24-pixel);
 }
 h6 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: var(--font-size-20-pixel);
 }
-h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
-    margin-top: 0;
-}
+
 p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 a {
+    font-family: var(--font-family-aldrich);
+    font-weight: 400;
     text-decoration: none;
 }
 a:hover, a:active {
     cursor: pointer;
-}
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: #444;
 }
 a:link {
     color: var(--color-primary);
@@ -172,32 +125,27 @@ a:visited {
     color: var(--color-primary);
 }
 ul, ol {
-    padding-left: 1.5rem;
-    
+    padding-left: 20px;
 }
 li ul, li ol {
     margin-top: 0;
     margin-bottom: 0;
 }
 article {
-    margin-bottom: 4rem;
+    margin-bottom: 40px;;
 }
 ul, ol {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;;
 }
 strong {
-    font-weight: bold;
+    font-weight: 500;
 }
 
-article img {
-    border-radius: 0.5rem;
-    width: 100%;
-}
 .grid {
     display: grid;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 20px;
+    row-gap: 20px;
     grid-column: span 1;
     grid-template-columns: repeat(1, 1fr);
 }
@@ -228,95 +176,41 @@ article img {
 }
 
 .wrapper {
-    padding: 0 1rem;
-    max-width: 720px;
+    padding: 0 20px;
+    max-width: 960px;
     margin: 0 auto;
 }
-.wrapper > *:first-child {
-    margin-top: 0;
-    padding-top: 1.5rem;
-}
 
-h1 {
-    margin-top: 0;
-    text-wrap: balance;
-}
-
-.grid .next, .grid .prev {
-    background: var(--color-background-card);
-    color: var(--color-text-card);
-    padding: 0 1.5rem;
-    padding-bottom: 1.5rem;
-    border-radius: 0.5rem;    
-}
-.grid .next p, .grid .prev p {
-    margin-bottom: 0;
-}
-.grid .next {
-    text-align: right;
-}
-.grid .prev:hover, .grid .next:hover {
-    text-decoration: none;
-}
-.grid .prev p.link, .grid .next p.link,
-.grid .prev p.arrow, .grid .next p.arrow {
-    color: var(--color-primary);
-}
-.grid .prev:hover p.link, .grid .next:hover p.link {
-    text-decoration: underline;
-    text-decoration-color: #444;   
-}
-.grid .prev p.link, .grid .next p.link {
-    margin-top: 0;
-}
-
-
-#navigation {
-    margin-top: 16px;
+#navigation nav {
     overflow: hidden;
-    border-bottom: 3px solid var(--background-color-1);
-}
-#navigation > a {
-    display: block;
-    line-height: 0;
-    padding: 8px;
-    text-align: center;
-}
-#navigation > a img {
-    height: 44px;
-    width: auto;
-}
-#navigation nav svg {
-    width: 24px;
-    height: 24px;
 }
 #navigation #primary-menu-button {
     display: none;
 }
 #navigation #primary-menu-button + label {
     position: absolute;
-    top: 22px;
+    top: 30px;
     left: 0;
-    margin: 0;
     line-height: 0;
-    padding: 12px;
+    padding: 0;
+    width: 100%;
 }
 #navigation #primary-menu-button + label:hover {
     cursor: pointer;
 }
 #navigation .menu-items {
+    padding: 0;
+    margin-top: 70px;
     max-height: 0px;
     transition: max-height .3s ease-in-out 0s;
-    margin-top: 6px;
 }
 #navigation .menu-items a {
     display: block;
-    padding: 16px;
-    border-top: 0.5px solid var(--background-color-1);
-    color: var(--text-color);
+    padding: 20px 10px;
+    color: var(--color-text-secondary);
 }
 #navigation .menu-items a:hover {
-    color: var(--link-color-hover)
+    color: var(--color-text-primary);
 }
 #navigation input:checked ~ .menu-items {
     max-height: 999px;
@@ -336,126 +230,122 @@ h1 {
 }
 @media screen and (min-width: 600px) {
     #navigation {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        margin: 20px;
     }
-    #navigation > a {
-        grid-column: span 1;
-    }
-    #navigation nav {
-        overflow: hidden;
-        grid-column: span 1;
-    }
-    #primary-menu-button ~ label {
+    #navigation #primary-menu-button ~ label {
         display: none;
     }
-    #navigation nav .menu-items {
+    #navigation .menu-items {
         display: block;
         max-height: none;
         text-align: right;
-        padding: 8px;
+        padding: 20px;
+        margin-top: 0;
     }
-    #navigation nav .menu-items a {
-        padding: 8px;
+    #navigation .menu-items a {
         display: inline-block;
         border: none;
+        padding: 0px 10px;
     }
 }
 
-a.button {
-    font-size: 0.66rem;
-    font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    margin: 16px;
+.button {
+    margin: 10px;
+    padding: 10px 20px;
 }
-a.button.primary {
-    
-    padding: 12px;
+.button.primary {
     color: #f5f5f5;
     background: linear-gradient(89.54deg, #DC4200 0.4%, #FF7226 99.6%);
     border: 1px solid #EF8A34;
 }
-a.button.primary:hover {
-    text-decoration: none;
-
+.button.primary:hover {
     background: linear-gradient(89.54deg, #AF3906 0.4%, #F75C09 99.6%);
     border: 1px solid #CB4E22;
 }
-a.button.primary:active {
-    text-decoration: none;
-    
+.button.primary:active {
     background: linear-gradient(89.54deg, #DC4200 0.4%, #FF7226 99.6%);
     border: 1px solid #EF8A34;
 }
-
-a.button.secondary {
-    padding: 12px;
+.button.secondary {
     color: #FF7226;
-
     background: #4B4B4C;
     border: 1px solid #CDA779;
 }
-a.button.secondary:hover {
-    text-decoration: none;
-
+.button.secondary:hover {
     background: #2E2E2F;
     border: 1px solid #AF885A;
 }
-a.button.secondary:active {
-    text-decoration: none;
-    
+.button.secondary:active {    
     background: #4B4B4C;
     border: 1px solid #DFB37F;
 }
-
-
-#navigation > a picture img {
-    position: absolute;
-    width: 320px;
-    height: 320px;
-}
-#navigation .menu-items a {
-    font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.66rem;
-    font-weight: 400;
-    line-height: 120%;
-    color: #fff;
-}
-
 
 .hero {
     text-align: center;
     background: url(../images/Hero.png);
     background-size: cover;
-    padding: 64px 0;
+    background-position: top right;
+    padding-bottom: 60px;
 }
-.hero h1 {
-    font-family: "Afacad", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-    line-height: 3.6rem;
-    font-weight: 500;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 96px;
-    margin-bottom: 48px;
+.hero .wrapper {
+    max-width: 720px;
 }
-.hero p {
-    font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1.33rem;
+.hero .logo-box {
+    text-align: center;
+    position: relative;
+    height: 140px;
+}
+.hero .wrapper img {
+    width: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+}   
+.button {
+    display: block;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+    .button {
+        display: inline-block;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero .logo-box {
+        text-align: left;
+        position: relative;
+        height: 120px;
+    }
+    .hero .wrapper img {
+        width: 400px;
+        position: absolute;
+        top: -100px;
+        left: -260px;
+    }
+    
+}
+.hero .wrapper h1 {
+    font-family: var(--font-family-afacad);
+    margin-top: 0;
+    margin-top: 60px;
+}
+.hero .wrapper p {
+    font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-32-pixel);
+    line-height: var(--line-height);
     font-weight: 400;
-    line-height: 120%;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
-.hero span {
-    font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 0.7rem;
+.hero .wrapper span {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-16-pixel);
     font-weight: 400;
-    line-height: 120%;
 }
 
 
 
 .caption {
-    padding: 8px;
+    display: inline-block;
+    padding: 10px 20px;
     border: 1px solid #26252A;
 }
