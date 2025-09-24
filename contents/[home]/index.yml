@@ -82,7 +82,8 @@ outline:
     title: "What's inside the book"
 
     chapters:
-        - title: "Getting started"
+        - number: "00"
+          title: "Getting started"
           description: "This chapter introduces the fundamentals needed to begin programming with Swift. It covers the basics of programming concepts, an overview of the Swift language, and how to use the command line. It also explains Integrated Development Environments (IDEs) and how to choose and set up your development environment."
           lessons: 
             - title: "Introduction"
@@ -90,7 +91,8 @@ outline:
             - title: "Swift"
             - title: "Programming"
             - title: "IDE"
-        - title: "The basics"
+        - number: "01"
+          title: "The basics"
           description: "This chapter covers the core building blocks of Swift programming. It explains how to use the print function, write comments, and define constants and variables. It introduces Swift’s standard data types and demonstrates common string operations, including string interpolation."
           lessons: 
             - title: "The print function"
@@ -98,7 +100,8 @@ outline:
             - title: "Constants & variables"
             - title: "Standard types"
             - title: "String operations"
-        - title: "Operators"
+        - number: "02"
+          title: "Operators"
           description: "This chapter provides a detailed overview of Swift’s operators and how they are used in programming. It covers the assignment operator, arithmetic operators, and the remainder operator. It explains comparison and logical operators, as well as how to combine operators to create more complex expressions."
           lessons: 
             - title: "Assignment operator"
@@ -107,12 +110,14 @@ outline:
             - title: "Comparison operators"
             - title: "Logical operators"
             - title: "Combining operators"
-        - title: "Optionals"
+        - number: "03"
+          title: "Optionals"
           description: "This chapter introduces optionals and their role in handling situations where data may be missing or invalid. It explains how to read user input with the readLine function and why the returned value is optional. It covers the nil value, working safely with optionals, and writing programs that respond appropriately to user input."
           lessons: 
             - title: "The nil value"
             - title: "The readLine function"
-        - title: "Data types"
+        - number: "04"
+          title: "Data types"
           description: "This chapter explores Swift’s data types beyond the basic single-value types. It covers ranges, arrays, sets, and dictionaries, explaining how and when to use each. It also introduces specialized types such as UInt, Float, and Character for more precise data control."
           lessons: 
             - title: "Ranges"
@@ -120,7 +125,8 @@ outline:
             - title: "Sets"
             - title: "Dictionaries"
             - title: "Other types"
-        - title: "Control flow"
+        - number: "05"
+          title: "Control flow"
           description: "This chapter explains how to use control flow to make decisions and repeat actions in Swift programs. It covers conditional statements (if-else and switch-case), looping structures (while, repeat-while, and for-in), and the concept of variable scope. It also introduces nested statements for more complex logic."
           lessons: 
             - title: "If-else"
@@ -130,7 +136,8 @@ outline:
             - title: "For-in"
             - title: "Scopes"
             - title: "Nested statements"
-        - title: "Functions"
+        - number: "06"
+          title: "Functions"
           description: "This chapter introduces functions as a way to organize and reuse code in Swift. It covers defining and calling functions, working with parameters and return values, and understanding function types. It also explains closures and higher-order functions for more advanced use cases."
           lessons: 
             - title: "Basics"
@@ -138,21 +145,24 @@ outline:
             - title: "Return types"
             - title: "Closures"
             - title: "Higher-order functions"
-        - title: "Structs"
+        - number: "07"
+          title: "Structs"
           description: "This chapter introduces structs as a way to create custom data types in Swift. It explains how to define structs, create and use instances, and add properties to store data. It also covers writing methods to give structs behavior and shows how they can help organize code."
           lessons: 
             - title: "Basics"
             - title: "Initialization"
             - title: "Properties"
             - title: "Methods"
-        - title: "Enums"
+        - number: "08"
+          title: "Enums"
           description: "This chapter explains how to use enums to define types with a limited set of possible values. It covers basic enum syntax, adding associated values, and using raw values. It also shows how to add methods and properties to enums and use pattern matching for more expressive logic."
           lessons: 
             - title: "Basics"
             - title: "Case values"
             - title: "Methods and properties"
             - title: "Pattern matching"
-        - title: "Error handling"
+        - number: "09"
+          title: "Error handling"
           description: "This chapter introduces Swift’s error handling system and how to model errors using structs and enums. It covers writing functions that can throw errors and handling them with do, try, and catch. The chapter also explains using guard-else, the Result type, and runtime checks to write safer, more reliable code."
           lessons: 
             - title: "Error types"
@@ -161,7 +171,8 @@ outline:
             - title: "Guard-else"
             - title: "The Result type"
             - title: "Runtime checks"
-        - title: "Packages"
+        - number: "10"
+          title: "Packages"
           description: "This chapter covers how to organize and manage Swift code using packages and package managers. It explains creating executables and libraries, managing access control, and writing tests. It also introduces version control, handling dependencies, and essential tools for real-world project development."
           lessons: 
             - title: "Basics"
@@ -172,7 +183,8 @@ outline:
             - title: "Version control"
             - title: "Dependencies"
             - title: "Tools"
-        - title: "Protocols"
+        - number: "11"
+          title: "Protocols"
           description: "This chapter introduces protocols as a way to define shared capabilities that different types can adopt. It covers how to define protocols, make types conform to them, and write flexible, reusable code based on behavior rather than concrete types. The chapter also explores protocol inheritance, extensions, associated types, and built-in protocols."
           lessons: 
             - title: "Basics"
@@ -180,27 +192,31 @@ outline:
             - title: "Inheritance"
             - title: "Associated types"
             - title: "Built in protocols"
-        - title: "Generics"
+        - number: "12"
+          title: "Generics"
           description: "This chapter explains how to use generics to write flexible, reusable, and type-safe code. It covers creating generic functions, types, and protocols, allowing your code to work with different data types without duplication. The chapter also introduces variadic generics for advanced use cases."
           lessons: 
             - title: "Functions"
             - title: "Types"
             - title: "Protocols"
             - title: "Variadics"
-        - title: "Classes"
+        - number: "13"
+          title: "Classes"
           description: "This chapter focuses on classes — reference types that let multiple variables share and modify the same instance, making them a core tool for modeling shared state. It also explores related object-oriented programming features like inheritance and polymorphism, while also introducing considerations around memory management such as reference counting and potential retain cycles."
           lessons: 
             - title: "Basics"
             - title: "OOP"
             - title: "Memory management"
-        - title: "Ownership"
+        - number: "14"
+          title: "Ownership"
           description: "This chapter explores Swift’s ownership model, explaining how memory is managed and how value ownership affects mutation and access. It covers concepts like non-copyable types, ownership modifiers, and working with unsafe memory."
           lessons: 
             - title: "Basics"
             - title: "Non-Copyable"
             - title: "Modifiers"
             - title: "Unsafe memory"
-        - title: "Concurrency"
+        - number: "15"
+          title: "Concurrency"
           description: "This chapter introduces concurrency in Swift, covering the fundamentals of asynchronous programming. It explains how to use async-await, manage tasks, and ensure safe data access with actors and the Sendable protocol. The chapter also covers asynchronous sequences."
           lessons:
             - title: "Basics"
@@ -209,7 +225,8 @@ outline:
             - title: "Sendable"
             - title: "Actors"
             - title: "Sequences"
-        - title: "Attributes"
+        - number: "16"
+          title: "Attributes"
           description: "This chapter covers advanced Swift features that enhance code expressiveness and performance. It introduces attributes, property wrappers, and key paths to write cleaner and more powerful code. It also explores modern concepts like result builders, macros, and other more advanced attributes."
           lessons:
             - title: "Result builders"
@@ -261,19 +278,23 @@ ask:
           description: "Want to make an impact? Want to get to know others in the same shoe as you? Join a living community on Discord to learn and shape the book together. Find mates to motivate each other. Ask questions if you get stuck and get free mentoring in exchange for your precious feedback."
           icons: 
             - link: "Discord"
+              image: "Discord"
         - title: "Follow us on X, Bluesky and Mastodon"
           description: "Follow us on social platforms for Swift related content and updates. We’re sharing complementary educational stuff on programming — pieces of info, visuals, and of course sneak peaks into what we’re currently working on."
           icons: 
             - link: "X"
+              image: "X"
             - link: "Bluesky"
+              image: "Bluesky"
             - link: "Mastodon"
+              image: "Mastodon"
         - title: "Prefer to drop an email?"
           description: "Write us an e-mail to learntocodeusingswift@gmail.com. Send us your thoughts on the book, ask questions , or show us your dog. "
           icons:
             
 cta:
     title: "Start coding with Swift"
-    subtitle: "Start coding with Swift"
+    subtitle: "It’s modern, powerful, and a breeze to use"
     buttons: 
         primary: 
             label: "Get the book for $49"

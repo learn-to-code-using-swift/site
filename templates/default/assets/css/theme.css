@@ -73,6 +73,10 @@ body {
     font-family: var(--font-family-afacad);
     line-height: var(--line-height);
 }
+img { 
+    width: 100%;
+}
+
 main {
     min-height: 100vh;
 }
@@ -110,6 +114,19 @@ p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+p.tagline {
+    font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-32-pixel);
+    line-height: var(--line-height);
+}
+span.info {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-14-pixel);
+    line-height: var(--line-height);
+    display: block;
+}
+
+
 a {
     font-family: var(--font-family-aldrich);
     font-weight: 400;
@@ -410,10 +427,6 @@ strong {
 .book > .wrapper .grid {
     margin-top: 80px;
 }
-.book > .wrapper img {
-    display: block;
-    width: 100%;
-}
 .book > .wrapper dl {
     margin-bottom: 40px;
     margin-left: 50px;
@@ -448,7 +461,7 @@ strong {
 }
 
 
-.testimonials, .authors, .chapters, .callout, .faq, .contact {
+.testimonials, .authors, .chapters, .callout, .faq, .contact, .cta {
     background: url(../images/Hero.png);
     background-size: cover;
     background-position: top right;
@@ -494,13 +507,6 @@ strong {
     display: block;
 }
 
-.testimonials .grid .source span.info {
-    font-family: var(--font-family-afacad);
-    font-size: var(--font-size-14-pixel);
-    line-height: var(--line-height);
-    display: block;
-}
-
 .testimonials .grid p {
     font-family: var(--font-family-afacad);
     font-size: var(--font-size-20-pixel);
@@ -509,6 +515,207 @@ strong {
     margin: 0;
 }
 
-.authors .grid img {
-    width: 100%;
+.authors .grid {
+    background: url(../images/Triangles.png);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
+.authors .picture-wrapper {
+    display: flex; 
+    margin-top: auto;
+}
+.authors .names {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-24-pixel);
+    line-height: var(--line-height);
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.chapters > .wrapper > .grid {
+    column-gap: 80px;
+    row-gap: 0px;
+    margin-top: 80px;
+}
+.chapters > .wrapper > .grid .right {
+    border-bottom: 1px dashed var(--color-border-secondary);
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+@media screen and (min-width: 600px) {
+    .chapters > .wrapper > .grid .right {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .chapters > .wrapper > .grid {
+        row-gap: 80px;
+        background: url(../images/Line.png);
+        background-size: 1px 6px;
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+}
+
+.chapters p, .chapters h4, .chapters li {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
+    
+}
+.chapters h3 {
+    /* border-bottom: 1px dashed var(--color-border-secondary); */
+}
+.chapters h4 {
+    color: var(--color-text-primary);
+}
+.chapters ul {
+    padding-left: 0;
+}
+.chapters li {
+    list-style-type: none;
+    color: var(--color-text-secondary);
+}
+.chapters .arrow {
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+
+
+.callout {
+    text-align: center;
+}
+.callout .button {
+    margin-top: 60px;
+}
+
+.callout p.more {
+    margin-top: 80px;
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
+}
+
+.faq h2 {
+    margin-bottom: 80px;
+}
+@media screen and (min-width: 600px) {
+    .faq h2 {
+        width: 50%;
+    }
+}
+.faq details {
+    border-top: 1px dashed var(--color-border-secondary);
+    padding: 20px;
+}
+.faq details summary {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-32-pixel);
+    line-height: var(--line-height);
+    color: var(--color-text-secondary);
+}
+.faq details summary:hover {
+    cursor: pointer;
+}
+
+.faq details summary::marker {
+    color: var(--color-border-secondary);
+}
+
+.contact {
+    text-align: center;
+}
+.contact h3 {
+    margin-top: 10px;
+}
+.contact .grid {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: left;
+    grid-template-columns: 44px 1fr;
+}
+.contact .wrapper {
+    position: relative;
+}
+.contact .email {
+    text-align: right;
+}
+.contact .email img {
+    width: 140px;
+}
+
+
+
+
+.cta {
+    text-align: center;
+}
+.cta .tagline {
+    margin-bottom: 80px;
+}
+.cta .wrapper {
+    border: 1px dashed var(--color-border-secondary);
+    padding: 40px;
+    padding-top: 100px;
+    margin: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .cta .wrapper {
+        margin: auto;
+    }
+}
+
+footer {
+    text-align: center;
+    border-bottom: 1px dashed var(--color-border-secondary);
+    margin-bottom: 160px;
+}
+footer .grid {
+    grid-template-columns: 1fr;
+}
+footer img {
+    width: 200px;
+    margin: auto;
+}
+footer h3 {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
+    color: var(--color-text-primary);
+}
+footer ul {
+    padding-left: 0;
+}
+footer li {
+    list-style-type: none;
+}
+footer li a {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
+}
+footer li a, footer li a:link, footer li a:visited {
+    color: var(--color-text-secondary);
+}
+footer li a:hover {
+    color: var(--color-text-primary);
+}
+
+footer .social img {
+    width: 32px;
+    
+    margin: 20px 5px;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        text-align: left;
+    }
+    footer .grid {
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+}
+        

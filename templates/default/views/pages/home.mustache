@@ -109,7 +109,7 @@
             <div>
                 <span class="caption">Authors</span>
                 <h2>{{page.authors.title}}</h2>
-                <p>{{page.authors.subtitle}}</p>
+                <p class="names">{{page.authors.subtitle}}</p>
 
                 <div>
                     <p>{{page.authors.tibor}}</p>
@@ -117,8 +117,8 @@
                     <p>{{page.authors.summary}}</p>
                 </div>
             </div>
-            <div>
-                <img src="{{baseUrl}}/logos/ltcus.png" alt="{{name}}">
+            <div class="picture-wrapper">
+                <img src="{{baseUrl}}/images/Authors.png" alt="{{page.authors.title}}">
             </div>
         </div>
     </div>
@@ -127,26 +127,33 @@
 <div class="chapters">
     <div class="wrapper">
         <a id="chapters"></a>
-        <div class="outline">
-            <h2>{{page.outline.title}}</h2>
+        <span class="caption">Chapters</span>
+        <h2>{{page.outline.title}}</h2>
 
-            <div class="grid grid-221">
-            {{#page.outline.chapters}}
-                <div>
-                    <h3>{{title}}</h3>
-                    <p>{{description}}</p>
-                </div>
-                <div>
+        <div class="grid grid-211">
+        {{#page.outline.chapters}}
+            <div class="left">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+            <div class="right grid grid-2"> 
+                <div class="intro"> 
                     <h4>Lessons</h4>
                     <ul>
                     {{#lessons}}
                     <li>{{title}}</li>
-                    <!-- TODO IMG -->
                     {{/lessons}}
                     </ul>
                 </div>
-            {{/page.outline.chapters}}
-            </div>
+                <div class="illustration">
+                    <img src="{{baseUrl}}/images/chapters/{{number}}.png" alt="{{title}}">
+                </div>                    
+            </div>                    
+        {{/page.outline.chapters}}
+        
+        </div>
+        <div class="arrow">
+            <img src="{{baseUrl}}/images/Arrow.png" alt="Arrow">
         </div>
     </div>
 </div>
@@ -155,69 +162,75 @@
 <div class="callout">
     <div class="wrapper">
         <h2>{{page.callout.title}}</h2>
-        <p>{{page.callout.subtitle}}</p>
+        <p class="tagline">{{page.callout.subtitle}}</p>
         
-        <a href="{{page.callout.buttons.secondary.url}}" class="button secondary">{{page.callout.buttons.secondary.label}}</a>
+        <!-- a href="{{page.callout.buttons.secondary.url}}" class="button secondary">{{page.callout.buttons.secondary.label}}</a --> 
         <a href="{{page.callout.buttons.primary.url}}" class="button primary">{{page.callout.buttons.primary.label}}</a>
         
-        <p><small>{{page.callout.note}}</small></p>
+        <span class="info">{{page.callout.note}}</span>
+
+        <p class="more">Not ready yet? Find free code examples at <a href="https://learn-swift.com/">learn-swift.com</a></p>
     </div>
 </div>
 
 <div class="faq">
     <div class="wrapper">
         <a id="faq"></a>
-        <div class="faq">
-            <h2>{{page.faq.title}}</h2>
+        <span class="caption">FAQ</span>
+        <h2>{{page.faq.title}}</h2>
 
-            <div class="">
-            {{#page.faq.items}}
-                <details>
-                    <summary>{{question}}</summary>
-                    <div>
-                        <p>{{& answer}}</p>
-                    </div>
-                </details>
-            {{/page.faq.items}}
-            </div>
+        <div class="">
+        {{#page.faq.items}}
+            <details>
+                <summary>{{question}}</summary>
+                <div>
+                    <p>{{& answer}}</p>
+                </div>
+            </details>
+        {{/page.faq.items}}
         </div>
+    
     </div>
 </div>
 
 <div class="contact">
     <div class="wrapper">
         <a id="contact"></a>
-        <div class="ask">
-            <h2>{{page.ask.title}}</h2>
-            <p>{{page.ask.subtitle}}</p>
+        <span class="caption">Contact</span>    
+        <h2>{{page.ask.title}}</h2>
+        <p class="tagline">{{page.ask.subtitle}}</p>
 
-            <div class="grid grid-221">
-            {{#page.ask.channels}}
-                <div>
-                    {{#icons}}
-                    <p>{{link}}</p>
-                    <!-- TODO IMG -->
-                    {{/icons}}
-                </div>
-                <div>
-                    <h3>{{title}}</h3>
-                    <p>{{description}}</p>
-                </div>
-            {{/page.ask.channels}}
+        <div class="grid grid-2">
+        {{#page.ask.channels}}
+            <div>
+                {{#icons}}
+                <a href="{{link}}" target="_blank">
+                    <img src="{{baseUrl}}/images/social/{{image}}.png" alt="{{link}}">
+                </a>
+                {{/icons}}
             </div>
+            <div>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+        {{/page.ask.channels}}
+        </div>
+        <div class="email">
+            <img src="{{baseUrl}}/images/social/Email.png" alt="Email">
         </div>
     </div>
+
 </div>
 
 <div class="cta">
     <div class="wrapper">
         <h2>{{page.cta.title}}</h2>
-        <p>{{page.cta.subtitle}}</p>
+        <p class="tagline">{{page.cta.subtitle}}</p>
         
         <a href="{{page.cta.buttons.secondary.url}}" class="button secondary">{{page.cta.buttons.secondary.label}}</a>
         <a href="{{page.cta.buttons.primary.url}}" class="button primary">{{page.cta.buttons.primary.label}}</a>
         
-        <p><small>{{page.cta.note}}</small></p>
+        <span class="info">{{page.cta.note}}</span>
     </div>
 </div>
 

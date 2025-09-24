@@ -43,43 +43,52 @@
     {{$main}}{{/main}}
     </main>
 
-    <footer class="grid grid-421">
-        <div>
-            <h4>{{site.name}}</h4>
-            <img
-                width="196px"
-                src="{{baseUrl}}/logos/ltcus.png"
-                alt="Logo of {{site.name}}"
-                title="{{site.name}}"
-            >
+    <footer>
+        <div class="wrapper grid">
+            <div>
+                <h3>{{site.name}}</h3>
+                <img
+                    width="196px"
+                    src="{{baseUrl}}/logos/ltcus.png"
+                    alt="Logo of {{site.name}}"
+                    title="{{site.name}}"
+                >
+            </div>
+            <div>
+                <h3>On this page</h3>
+                <ul>
+                    {{#site.navigation}}
+                    <li><a href="{{url}}">{{label}}</a></li>
+                    {{/site.navigation}}
+                </ul>
+            </div>
+            <div>
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
+                    <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
+                    <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
+                    <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Follow us</h3>
+                
+                <a href="#">
+                    <img src="{{baseUrl}}/images/social/Discord.png" alt="Discord">
+                </a>
+                <a href="#">
+                    <img src="{{baseUrl}}/images/social/X.png" alt="X">
+                </a>
+                <a href="#">
+                    <img src="{{baseUrl}}/images/social/Bluesky.png" alt="Bluesky">
+                </a>
+                <a href="#">
+                    <img src="{{baseUrl}}/images/social/Mastodon.png" alt="Mastodon">
+                </a>
+                
+            </div>
         </div>
-        <div>
-            <h4>On this page</h4>
-            <ul>
-                {{#site.navigation}}
-                <li><a href="{{url}}">{{label}}</a></li>
-                {{/site.navigation}}
-            </ul>
-        </div>
-        <div>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
-                <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
-                <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
-                <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Follow us</h4>
-            <ul>
-                <li><a href="#">ICON</a></li>
-                <li><a href="#">ICON</a></li>
-                <li><a href="#">ICON</a></li>
-                <li><a href="#">ICON</a></li>
-            </ul>
-        </div>
-        
     </footer>
 
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}
