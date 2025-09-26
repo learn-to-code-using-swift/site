@@ -268,7 +268,7 @@ strong {
 #navigation input:checked ~ label line:nth-child(3) {
     transform: rotate(-45deg) translateY(-6px);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     #navigation {
         padding: 20px;
     }
@@ -361,6 +361,7 @@ strong {
 .button {
     display: block;
     margin-bottom: 20px;
+    
 }
 @media screen and (min-width: 600px) {
     .button {
@@ -480,7 +481,9 @@ strong {
     line-height: var(--line-height);
     margin-bottom: 40px;
 }
-
+.book img, .authors img {
+    width: 100%;
+}
 
 
 .testimonials h2 {
@@ -567,11 +570,15 @@ strong {
     margin-bottom: 40px;
     padding-bottom: 40px;
 }
-.chapters > .wrapper > .grid .right img, .book img, .authors img {
-    width: 100%;
-}
+
+.chapters > .wrapper > .grid .right img {
+    width: auto;
+}   
 
 @media screen and (min-width: 900px) {
+    .chapters > .wrapper > .grid .right img {
+        width: 100%;
+    }
     /* .chapters > .wrapper > .grid {
         grid-template-columns: 60% auto;
     } */
@@ -650,9 +657,32 @@ strong {
 .faq details summary:hover {
     cursor: pointer;
 }
-
-.faq details summary::marker {
-    color: var(--color-border-secondary);
+.faq summary {
+    position: relative;   
+    list-style: none;
+    padding-left: 40px;
+}
+.faq summary::-webkit-details-marker {
+    display: none;   
+}
+.faq summary:hover {
+    cursor: pointer;
+}
+.faq summary::-webkit-details-marker {
+    display: none;
+}
+.faq summary:after {
+    content: "\002B";
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-32-pixel);
+    line-height: var(--line-height);
+    color: var(--color-primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+details[open] summary:after {
+    content: "\00D7";
 }
 
 .contact {
@@ -757,9 +787,9 @@ footer li a:hover {
 
 footer .social img {
     width: 32px;
+    display: inline-block;
     margin: 20px 5px;
 }
-
 @media screen and (min-width: 600px) {
     footer {
         text-align: left;
@@ -768,4 +798,3 @@ footer .social img {
         grid-template-columns: 40% 20% 20% 20%;
     }
 }
-        
