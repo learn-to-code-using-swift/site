@@ -111,19 +111,25 @@ h6 {
 }
 
 p {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 p.tagline {
     font-family: var(--font-family-aldrich);
     font-size: var(--font-size-32-pixel);
     line-height: var(--line-height);
+    margin-bottom: 80px;
 }
 span.info {
     font-family: var(--font-family-afacad);
     font-size: var(--font-size-14-pixel);
     line-height: var(--line-height);
     display: block;
+}
+span.caption {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #26252A;
 }
 
 
@@ -315,12 +321,26 @@ strong {
     position: relative;
     height: 140px;
 }
-.hero .wrapper img {
+.hero .wrapper .logo-box img {
     width: 200px;
     position: relative;
     top: 0;
     left: 0;
-}   
+}
+.hero .features {
+    display: flex;
+    justify-content: center;
+}
+.hero .feature {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .feature img {
+    width: 24px;
+    padding: 0 5px;
+}
 .button {
     display: block;
     margin-bottom: 20px;
@@ -339,7 +359,7 @@ strong {
         position: relative;
         height: 120px;
     }
-    .hero .wrapper img {
+    .hero .wrapper .logo-box img {
         width: 400px;
         position: absolute;
         top: -100px;
@@ -350,32 +370,20 @@ strong {
 .hero .wrapper h1 {
     font-family: var(--font-family-afacad);
     text-transform: uppercase;
-    margin-top: 0;
-    margin-top: 60px;
-}
-.hero .wrapper p {
-    font-family: var(--font-family-aldrich);
-    font-size: var(--font-size-32-pixel);
-    line-height: var(--line-height);
-    font-weight: 400;
-    margin-bottom: 40px;
+    margin: 80px auto;
 }
 .hero .wrapper .features {
     margin-top: 80px;
 }
 .hero .wrapper span {
     font-family: var(--font-family-afacad);
-    font-size: var(--font-size-16-pixel);
+    font-size: var(--font-size-20-pixel);
     line-height: var(--line-height);
     font-weight: 400;
 }
 
 
-.caption {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #26252A;
-}
+
 
 .highlights {
     background: url(../images/Hero.png);
@@ -706,7 +714,6 @@ footer li a:hover {
 
 footer .social img {
     width: 32px;
-    
     margin: 20px 5px;
 }
 

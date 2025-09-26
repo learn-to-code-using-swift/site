@@ -15,11 +15,11 @@ hero:
             url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
     features:
         - label: "14(+2) chapters"
-          icon: ""
+          icon: "Chapters"
         - label: "700+ pages"
-          icon: ""
+          icon: "Pages"
         - label: "350+ exercises"
-          icon: ""
+          icon: "Exercises"
 
 highlights:
     caption: "Summary"
@@ -61,14 +61,22 @@ beta:
 testimonials:
     title: "What readers say about it"
     quotes:
+        - quote: "Whether you're learning Swift or you're seasoned developer, there is something to learn in this book. Tibor and Kitti made an excellent work of gathering pretty much all aspects of the Swift programming language, following the principle of progressive disclosure: you learn only what you need when you need it. The exercises at the end of each chapter oblige you to dive deeper and verify you effectively acquired the concepts presented."
+          name: "Sébastien Stormacq"
+          info: "Developer Experience, AWS"
+          image: "sebastien"
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Joannis Orlandos"
+          info: "Swift nerd and consultant"
+          image: "joannis"
+        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+          name: "Dániel Horváth"
+          info: "Aspiring Swift developer"
+          image: "daniel"
         - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
           name: "Name"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
-          name: "Name"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
-          name: "Name"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
-          name: "Name"
+          info: ""
+          image: ""
 
 
 authors:

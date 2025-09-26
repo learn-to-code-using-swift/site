@@ -24,16 +24,19 @@
             <img src="{{baseUrl}}/logos/ltcus.png" alt="{{page.hero.title}}">
         </div>
         <h1>{{page.hero.title}}</h1>
-        <p>{{page.hero.subtitle}}</p>
+        <p class="tagline">{{page.hero.subtitle}}</p>
 
         <a href="{{page.hero.buttons.secondary.url}}" class="button secondary">{{page.hero.buttons.secondary.label}}</a>
         <a href="{{page.hero.buttons.primary.url}}" class="button primary">{{page.hero.buttons.primary.label}}</a>
 
-        <p class="features">
+        <div class="features">
         {{#page.hero.features}}
-            <span>{{label}}</span>
+            <div class="feature">
+                <img src="{{baseUrl}}/images/hero/{{icon}}.png" alt="{{label}}">
+                <span>{{label}}</span>
+            </div>
         {{/page.hero.features}}
-        </p>
+        </div>
     </div>
 </div>
 
@@ -85,14 +88,14 @@
         <span class="caption">Testimonials</span>
         <h2>What<br><span>readers</span><br>say about it</h2>
 
-        <div class="grid grid-311">
+        <div class="grid grid-211">
         {{#page.testimonials.quotes}}
             <div>
                 <div class="source">
-                    <img src="{{baseUrl}}/logos/ltcus.png" alt="{{name}}">
+                    <img src="{{baseUrl}}/assets/testimonials/{{image}}.jpeg" alt="{{name}}">
                     <div>
                         <span class="name">{{name}}</span>
-                        <span class="info">{{name}}</span>
+                        <span class="info">{{info}}</span>
                     </div>
                 </div>
                 <p>"{{quote}}"</p>
@@ -126,7 +129,7 @@
 
 <div class="chapters">
     <div class="wrapper">
-        <a id="chapters"></a>
+        <a id="content"></a>
         <span class="caption">Chapters</span>
         <h2>{{page.outline.title}}</h2>
 
