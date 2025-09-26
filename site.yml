@@ -4,11 +4,24 @@ language: "en-US"
 navigation:
     - label: "Summary"
       url: "/"
+    - label: "Testimonials"
+      url: "/#testimonials"
     - label: "Authors"
       url: "/#authors"
-    - label: "Chapters"
-      url: "/#chapters"
+    - label: "Content"
+      url: "/#content"
     - label: "FAQ"
       url: "/#faq"
     - label: "Contact"
       url: "/#contact"
+
+footer:
+    discord:
+        link: "https://discord.gg/vEVdp5xn5e"
+    x:
+        link: "https://x.com/kittibodecs"
+    bluesky:
+        link: "https://bsky.app/profile/kittibodecs.bsky.social"
+    mastodon:
+        link: "https://mastodon.social/@kittibodecs"
+        

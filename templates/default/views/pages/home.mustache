@@ -1,11 +1,243 @@
 {{<html}}
 {{$main}}
 
-<div class="wrapper">
-    <article>
-        {{& page.contents.html}}
+<div class="hero">
+    <header id="navigation">
+        <nav>
+            <input type="checkbox" id="primary-menu-button" name="menu-button" class="menu-button">
+            <label for="primary-menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+            <div class="menu-items">
+                {{#site.navigation}}
+                <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+                {{/site.navigation}}
+            </div>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="logo-box">
+            <img src="{{baseUrl}}/logos/ltcus.png" alt="{{page.hero.title}}">
+        </div>
+        <h1>{{page.hero.title}}</h1>
+        <p class="tagline">{{page.hero.subtitle}}</p>
 
-    </article>
+        <a href="{{page.hero.buttons.secondary.url}}" class="button secondary">{{page.hero.buttons.secondary.label}}</a>
+        <a href="{{page.hero.buttons.primary.url}}" class="button primary">{{page.hero.buttons.primary.label}}</a>
+
+        <div class="features">
+        {{#page.hero.features}}
+            <div class="feature">
+                <img src="{{baseUrl}}/images/hero/{{icon}}.png" alt="{{label}}">
+                <span>{{label}}</span>
+            </div>
+        {{/page.hero.features}}
+        </div>
+    </div>
+</div>
+
+
+<div class="highlights">
+    <div class="wrapper">
+        <span class="caption">{{page.highlights.caption}}</span>
+        <h2>{{page.highlights.title}}</h2>
+
+        <div class="grid grid-311">
+        {{#page.highlights.sections}}
+            <div>
+                {{#title}}<h3>{{.}}</h3>{{/title}}
+                {{#description}}<p>{{.}}</p>{{/description}}
+            </div>
+        {{/page.highlights.sections}}
+        </div>
+    </div>
+</div>
+
+<div class="book">
+    <div class="wrapper">
+        <p>{{page.beta.caption}}</p>
+        <h2>{{page.beta.title}}</h2>
+        
+        <div class="grid grid-211">
+            <div>
+                <img src="{{baseUrl}}/images/Book.png" alt="{{page.beta.title}}">
+            </div>
+
+            <div>
+                <dl>
+                {{#page.beta.list}}
+                    <dt>{{title}}</dt>
+                    <dd>{{description}}</dd>
+                {{/page.beta.list}}
+                </dl>
+
+                <a href="{{page.beta.buttons.secondary.url}}" class="button secondary">{{page.beta.buttons.secondary.label}}</a>
+                <a href="{{page.beta.buttons.primary.url}}" class="button primary">{{page.beta.buttons.primary.label}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="testimonials">
+    <div class="wrapper">
+        <a id="testimonials"></a>
+        <span class="caption">{{page.testimonials.caption}}</span>
+        <h2>{{& page.testimonials.title}}</h2>
+
+        <div class="grid grid-211">
+        {{#page.testimonials.quotes}}
+            <div>
+                <div class="source">
+                    <img src="{{baseUrl}}/assets/testimonials/{{image}}.jpeg" alt="{{name}}">
+                    <div>
+                        <span class="name">{{name}}</span>
+                        <span class="info">{{info}}</span>
+                    </div>
+                </div>
+                <p>"{{quote}}"</p>
+            </div>
+        {{/page.testimonials.quotes}}
+        </div>
+    </div>
+</div>
+
+<div class="authors">
+    <div class="wrapper">
+        <a id="authors"></a>
+        <div class="grid grid-211">
+            <div>
+                <span class="caption">{{page.authors.caption}}</span>
+                <h2>{{page.authors.title}}</h2>
+                <p class="names">{{page.authors.subtitle}}</p>
+
+                <div>
+                    <p>{{page.authors.tibor}}</p>
+                    <p>{{page.authors.kitti}}</p>
+                    <p>{{page.authors.summary}}</p>
+                </div>
+            </div>
+            <div class="picture-wrapper">
+                <img src="{{baseUrl}}/images/Authors.png" alt="{{page.authors.title}}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="chapters">
+    <div class="wrapper">
+        <a id="content"></a>
+        <span class="caption">{{page.outline.caption}}</span>
+        <h2>{{page.outline.title}}</h2>
+
+        <div class="grid grid-211">
+        {{#page.outline.chapters}}
+            <div class="left">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+            </div>
+            <div class="right grid grid-2"> 
+                <div class="intro"> 
+                    <h4>Lessons</h4>
+                    <ul>
+                    {{#lessons}}
+                    <li>{{title}}</li>
+                    {{/lessons}}
+                    </ul>
+                </div>
+                <div class="illustration">
+                    <img src="{{baseUrl}}/images/chapters/{{number}}.png" alt="{{title}}">
+                </div>                    
+            </div>                    
+        {{/page.outline.chapters}}
+        
+        </div>
+        <div class="arrow">
+            <img src="{{baseUrl}}/images/Arrow.png" alt="Arrow">
+        </div>
+    </div>
+</div>
+
+
+<div class="callout">
+    <div class="wrapper">
+        <h2>{{page.callout.title}}</h2>
+        <p class="tagline">{{page.callout.subtitle}}</p>
+        
+        <!-- a href="{{page.callout.buttons.secondary.url}}" class="button secondary">{{page.callout.buttons.secondary.label}}</a --> 
+        <a href="{{page.callout.buttons.primary.url}}" class="button primary">{{page.callout.buttons.primary.label}}</a>
+        
+        <span class="info">{{page.callout.note}}</span>
+
+        <p class="more">Not ready yet? Find free code examples at <a href="https://learn-swift.com/"><span class="gradient">learn-swift.com</span></a></p>
+    </div>
+</div>
+
+<div class="faq">
+    <div class="wrapper">
+        <a id="faq"></a>
+        <span class="caption">FAQ</span>
+        <h2>{{page.faq.title}}</h2>
+
+        <div class="">
+        {{#page.faq.items}}
+            <details>
+                <summary>{{question}}</summary>
+                <div>
+                    <p>{{& answer}}</p>
+                </div>
+            </details>
+        {{/page.faq.items}}
+        </div>
+    
+    </div>
+</div>
+
+<div class="contact">
+    <div class="wrapper">
+        <a id="contact"></a>
+        <span class="caption">Contact</span>    
+        <h2>{{page.ask.title}}</h2>
+        <p class="tagline">{{page.ask.subtitle}}</p>
+
+        <div class="grid grid-2">
+        {{#page.ask.channels}}
+            <div>
+                {{#icons}}
+                <a href="{{link}}" target="_blank">
+                    <img src="{{baseUrl}}/images/social/{{image}}.svg" alt="{{link}}">
+                </a>
+                {{/icons}}
+            </div>
+            <div>
+                <h3>{{title}}</h3>
+                <p>{{& description}}</p>
+            </div>
+        {{/page.ask.channels}}
+        </div>
+        <div class="email">
+            <img src="{{baseUrl}}/images/Email.png" alt="Email">
+        </div>
+    </div>
+
+</div>
+
+<div class="cta">
+    <div class="wrapper">
+        <div class="contents">
+            <h2>{{page.cta.title}}</h2>
+            <p class="tagline">{{page.cta.subtitle}}</p>
+            
+            <a href="{{page.cta.buttons.secondary.url}}" class="button secondary">{{page.cta.buttons.secondary.label}}</a>
+            <a href="{{page.cta.buttons.primary.url}}" class="button primary">{{page.cta.buttons.primary.label}}</a>
+            
+            <span class="info">{{page.cta.note}}</span>
+        </div>
+    </div>
 </div>
 
 {{/main}}

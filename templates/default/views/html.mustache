@@ -18,12 +18,12 @@
     <meta property="og:url" content="{{page.permalink}}">
     <meta property="og:title" content="{{#page.title}}{{.}} - {{site.name}}{{/page.title}}{{^page.title}}{{site.name}}{{/page.title}}">
     <meta property="og:description" content="{{page.description}}">
-    <meta property="og:image" content="{{baseUrl}}/images/meta.jpg" />
+    <meta property="og:image" content="{{baseUrl}}/images/Meta.jpg" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{#page.title}}{{.}} - {{site.name}}{{/page.title}}{{^page.title}}{{site.name}}{{/page.title}}">
     <meta name="twitter:description" content="{{page.description}}">
-    <meta name="twitter:image" content="{{baseUrl}}/images/meta.jpg">
+    <meta name="twitter:image" content="{{baseUrl}}/images/Meta.jpg">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,19 +32,65 @@
     <link rel="stylesheet" media="screen" href="{{baseUrl}}/css/theme.css">
 
     {{#page.css}}<link rel="stylesheet" href="{{.}}">{{/page.css}}
-
-    
-
 </head>
 
 <body>
 
-    <main id="page-container">
+    <main>
     {{$main}}{{/main}}
     </main>
 
     <footer>
-        
+        <div class="wrapper">
+            <div class="background"></div>
+            <div class="grid">
+                <div>
+                    <h3 class="name">{{site.name}}</h3>
+                    <img
+                        width="196px"
+                        src="{{baseUrl}}/logos/ltcus.png"
+                        alt="Logo of {{site.name}}"
+                        title="{{site.name}}"
+                    >
+                </div>
+                <div>
+                    <h3>On this page</h3>
+                    <ul>
+                        {{#site.navigation}}
+                        <li><a href="{{url}}">{{label}}</a></li>
+                        {{/site.navigation}}
+                    </ul>
+                </div>
+                <div>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
+                        <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
+                        <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
+                        <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>Follow us</h3>
+                    
+                    <a href="{{site.footer.discord.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Discord.svg" alt="Discord">
+                    </a>
+                    <a href="{{site.footer.x.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/X.svg" alt="X">
+                    </a>
+                    <a href="{{site.footer.bluesky.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Bluesky.svg" alt="Bluesky">
+                    </a>
+                    <a href="{{site.footer.mastodon.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Mastodon.svg" alt="Mastodon">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
     </footer>
 
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}
