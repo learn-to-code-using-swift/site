@@ -44,51 +44,56 @@
     </main>
 
     <footer>
-        <div class="wrapper grid">
-            <div>
-                <h3 class="name">{{site.name}}</h3>
-                <img
-                    width="196px"
-                    src="{{baseUrl}}/logos/ltcus.png"
-                    alt="Logo of {{site.name}}"
-                    title="{{site.name}}"
-                >
+        <div class="wrapper">
+            <div class="background"></div>
+            <div class="grid">
+                <div>
+                    <h3 class="name">{{site.name}}</h3>
+                    <img
+                        width="196px"
+                        src="{{baseUrl}}/logos/ltcus.png"
+                        alt="Logo of {{site.name}}"
+                        title="{{site.name}}"
+                    >
+                </div>
+                <div>
+                    <h3>On this page</h3>
+                    <ul>
+                        {{#site.navigation}}
+                        <li><a href="{{url}}">{{label}}</a></li>
+                        {{/site.navigation}}
+                    </ul>
+                </div>
+                <div>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
+                        <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
+                        <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
+                        <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>Follow us</h3>
+                    
+                    <a href="{{site.footer.discord.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Discord.svg" alt="Discord">
+                    </a>
+                    <a href="{{site.footer.x.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/X.svg" alt="X">
+                    </a>
+                    <a href="{{site.footer.bluesky.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Bluesky.svg" alt="Bluesky">
+                    </a>
+                    <a href="{{site.footer.mastodon.link}}" target="_blank">
+                        <img src="{{baseUrl}}/images/social/Mastodon.svg" alt="Mastodon">
+                    </a>
+                    
+                </div>
             </div>
-            <div>
-                <h3>On this page</h3>
-                <ul>
-                    {{#site.navigation}}
-                    <li><a href="{{url}}">{{label}}</a></li>
-                    {{/site.navigation}}
-                </ul>
-            </div>
-            <div>
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="https://learn-swift.com/" target="_blank">learn-swift.com</a></li>
-                    <li><a href="https://theswiftdev.com/" target="_blank">theswiftdev.com</a></li>
-                    <li><a href="https://swiftonserver.com/" target="_blank">swiftonserver.com</a></li>
-                    <li><a href="https://swift.org/" target="_blank">swift.org</a></li>
-                </ul>
-            </div>
-            <div class="social">
-                <h3>Follow us</h3>
-                
-                <a href="#">
-                    <img src="{{baseUrl}}/images/social/Discord.svg" alt="Discord">
-                </a>
-                <a href="#">
-                    <img src="{{baseUrl}}/images/social/X.svg" alt="X">
-                </a>
-                <a href="#">
-                    <img src="{{baseUrl}}/images/social/Bluesky.svg" alt="Bluesky">
-                </a>
-                <a href="#">
-                    <img src="{{baseUrl}}/images/social/Mastodon.svg" alt="Mastodon">
-                </a>
-                
-            </div>
+            
         </div>
+
     </footer>
 
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}

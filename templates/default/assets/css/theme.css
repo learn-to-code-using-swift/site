@@ -485,7 +485,12 @@ strong {
     width: 100%;
 }
 
-
+.testimonials {
+    background: url(../images/Testimonials.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 .testimonials h2 {
     margin-bottom: 80px;
 }
@@ -579,9 +584,6 @@ strong {
     .chapters > .wrapper > .grid .right img {
         width: 100%;
     }
-    /* .chapters > .wrapper > .grid {
-        grid-template-columns: 60% auto;
-    } */
     .chapters > .wrapper > .grid .right {
         border: none;
         margin-bottom: 0;
@@ -722,17 +724,18 @@ details[open] summary:after {
 
 
 .cta {
+    position: relative;
+    z-index: 2;
     text-align: center;
 }
 .cta .tagline {
     margin-bottom: 80px;
 }
-.cta .wrapper {
+.cta .wrapper .contents {
     border: 1px dashed var(--color-border-secondary);
     padding: 40px;
     padding-top: 100px;
     margin: 20px;
-    
 }
 
 @media screen and (min-width: 600px) {
@@ -741,13 +744,25 @@ details[open] summary:after {
     }
 }
 
+footer .wrapper {
+    /* border: 1px solid blue; */
+    position: relative;
+}
+footer .background {
+    display: none;
+}
 footer {
     text-align: center;
     border-bottom: 1px dashed var(--color-border-secondary);
     margin-bottom: 160px;
 }
 footer .grid {
+    padding: 20px;
+    z-index: 2;
+    position: relative;
     grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
     margin-bottom: 20px;
 }
 footer img {
@@ -790,11 +805,26 @@ footer .social img {
     display: inline-block;
     margin: 20px 5px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
+    footer .background {
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        right: -90px;
+        width: 1280px;
+        height: 972px;
+        z-index: 1;
+        background: url(../images/Footer.jpg);
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
     footer {
         text-align: left;
     }
     footer .grid {
-        grid-template-columns: 40% 20% 20% 20%;
+        grid-template-columns: 37% 20% 20% 23%;
     }
 }
+

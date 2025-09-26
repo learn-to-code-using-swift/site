@@ -220,7 +220,7 @@
         {{/page.ask.channels}}
         </div>
         <div class="email">
-            <img src="{{baseUrl}}/images/social/Email.png" alt="Email">
+            <img src="{{baseUrl}}/images/Email.png" alt="Email">
         </div>
     </div>
 
@@ -228,13 +228,15 @@
 
 <div class="cta">
     <div class="wrapper">
-        <h2>{{page.cta.title}}</h2>
-        <p class="tagline">{{page.cta.subtitle}}</p>
-        
-        <a href="{{page.cta.buttons.secondary.url}}" class="button secondary">{{page.cta.buttons.secondary.label}}</a>
-        <a href="{{page.cta.buttons.primary.url}}" class="button primary">{{page.cta.buttons.primary.label}}</a>
-        
-        <span class="info">{{page.cta.note}}</span>
+        <div class="contents">
+            <h2>{{page.cta.title}}</h2>
+            <p class="tagline">{{page.cta.subtitle}}</p>
+            
+            <a href="{{page.cta.buttons.secondary.url}}" class="button secondary">{{page.cta.buttons.secondary.label}}</a>
+            <a href="{{page.cta.buttons.primary.url}}" class="button primary">{{page.cta.buttons.primary.label}}</a>
+            
+            <span class="info">{{page.cta.note}}</span>
+        </div>
     </div>
 </div>
 

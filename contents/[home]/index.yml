@@ -66,18 +66,10 @@ testimonials:
           name: "Sébastien Stormacq"
           info: "Developer Experience, AWS"
           image: "sebastien"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
-          name: "Joannis Orlandos"
-          info: "Swift nerd and consultant"
-          image: "joannis"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
+        - quote: "I thought programming was too complicated for me, but this course completely changed my attitude. It starts from the basics, explains clearly in every chapter, and builds real knowledge along the way. Now I’m no longer afraid of code—I’m excited to see what else I’ll learn."
           name: "Dániel Horváth"
           info: "Aspiring Swift developer"
           image: "daniel"
-        - quote: "Finally a book that doesn't assume any prior knowledge and teaches everything."
-          name: "Name"
-          info: ""
-          image: ""
 
 
 authors:
@@ -291,22 +283,22 @@ ask:
             Want to get to know others in the same shoe as you?<br>
             Join a living community on Discord to learn and shape the book together. Find mates to motivate each other. Ask questions if you get stuck and get free mentoring in exchange for your precious feedback.
           icons: 
-            - link: "Discord"
+            - link: "https://discord.gg/vEVdp5xn5e"
               image: "Discord"
         - title: "Follow us on X, Bluesky and Mastodon"
           description: |
             Follow us on social platforms for Swift related content and updates.<br>
             We’re sharing complementary educational stuff on programming — pieces of info, visuals, and of course sneak peaks into what we’re currently working on.
           icons: 
-            - link: "X"
+            - link: "https://x.com/kittibodecs"
               image: "X"
-            - link: "Bluesky"
+            - link: "https://bsky.app/profile/kittibodecs.bsky.social"
               image: "Bluesky"
-            - link: "Mastodon"
+            - link: "https://mastodon.social/@kittibodecs"
               image: "Mastodon"
         - title: "Prefer to drop an email?"
           description: | 
-            Write us an e-mail to learntocodeusingswift@gmail.com.<br>
+            Write us an e-mail to <a href="mailto:learntocodeusingswift@gmail.com?subject=LTCUS">learntocodeusingswift@gmail.com</a>.<br>
             Send us your thoughts on the book, ask questions , or show us your dog.
           icons:
             

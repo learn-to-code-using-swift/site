@@ -16,4 +16,12 @@ navigation:
       url: "/#contact"
 
 footer:
-    
+    discord:
+        link: "https://discord.gg/vEVdp5xn5e"
+    x:
+        link: "https://x.com/kittibodecs"
+    bluesky:
+        link: "https://bsky.app/profile/kittibodecs.bsky.social"
+    mastodon:
+        link: "https://mastodon.social/@kittibodecs"
+        
