@@ -3,12 +3,13 @@
     --color-text-secondary: #fff;
     --color-background-primary: #000;
     --color-border-primary: #999;
-    --color-border-secondary: #EB6A24;
+    --color-border-secondary: #5F291F;
 
     --font-family-afacad: "Afacad", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-family-aldrich: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
     --font-size-72-pixel: 4.5rem;
+    --font-size-64-pixel: 4rem;
     --font-size-48-pixel: 3rem; 
     --font-size-32-pixel: 2rem; 
     --font-size-28-pixel: 1.75rem;
@@ -17,7 +18,8 @@
     --font-size-16-pixel: 1rem;
     --font-size-14-pixel: 0.875rem;
 
-    --line-height: 120%;
+    --line-height: 140%;
+    --line-height-heading: 120%;
     
     --color-primary: #DE5D43;
     --color-border: #E3755F;
@@ -63,6 +65,7 @@
 }
 html, body {
     overflow-x: hidden;
+    background: linear-gradient(to right,#000 0%, #0E061F, #000 100%);
     background-color: var(--color-background-primary);
     color: var(--color-text-primary);
 }
@@ -71,25 +74,15 @@ html {
 }
 body {
     font-family: var(--font-family-afacad);
+    font-size: var(--font-size-20-pixel);
     line-height: var(--line-height);
 }
 img { 
-    width: 100%;
+    width: auto;
 }
 
 main {
     min-height: 100vh;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: var(--color-text-secondary);
-    font-family: var(--font-family-aldrich);
-    line-height: var(--line-height);
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-wrap: balance;
-    white-space: pre-line; 
-    
 }
 h1 {
     font-size: var(--font-size-72-pixel);
@@ -110,6 +103,17 @@ h6 {
     font-size: var(--font-size-20-pixel);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-secondary);
+    font-family: var(--font-family-aldrich);
+    line-height: var(--line-height-heading);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-wrap: balance;
+    white-space: pre-line; 
+}
+
 p {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -127,14 +131,27 @@ span.info {
     display: block;
 }
 span.caption {
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
+    color: #999;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 0px 10px;
     border: 1px solid #26252A;
+}
+span.gradient {
+    background: linear-gradient(to right, #F05238 0%, #F76C1F 50%, #FF8706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 
 a {
     font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-16-pixel);
+    line-height: var(--line-height);
     font-weight: 400;
     text-decoration: none;
 }
@@ -383,24 +400,17 @@ strong {
 }
 
 
-
-
-.highlights {
-    background: url(../images/Hero.png);
-    background-size: cover;
-    background-position: top right;
+.highlights, .book, .testimonials, .authors, .chapters, .callout, .faq, .contact, .cta {    
     padding: 80px 0;
 }
 .highlights h2 {
     max-width: 100%;
 }
-@media screen and (min-width: 600px) {
-    .highlights h2 {
-        max-width: 50%;
-    }
-}
+
 .highlights .grid {
     margin-top: 40px;
+    row-gap: 40px;
+    column-gap: 0;
 }
 .highlights .grid h3 {
     font-size: var(--font-size-28-pixel);
@@ -412,25 +422,28 @@ strong {
     font-size: var(--font-size-20-pixel);
     line-height: 135%;
 }
-
-
-.book {
-    background: url(../images/Hero.png);
-    background-size: cover;
-    background-position: top right;
-    padding: 80px 0;   
+@media screen and (min-width: 600px) {
+    .highlights .grid {
+        column-gap: 100px;
+        row-gap: 100px;
+    }
+    .highlights h2 {
+        max-width: 50%;
+    }
 }
+
 .book > .wrapper > h2 {
     text-align: center;
     margin-top: 10px;
+    text-wrap: wrap;
 }
 .book > .wrapper > p {
+    text-transform: uppercase;
     font-family: var(--font-family-aldrich);
     font-size: var(--font-size-20-pixel);
     line-height: var(--line-height);
     font-weight: normal;
     text-align: center;
-    margin-bottom: 0;
 }
 .book > .wrapper .grid {
     margin-top: 80px;
@@ -469,19 +482,17 @@ strong {
 }
 
 
-.testimonials, .authors, .chapters, .callout, .faq, .contact, .cta {
-    background: url(../images/Hero.png);
-    background-size: cover;
-    background-position: top right;
-    padding: 80px 0;   
-}
 
 .testimonials h2 {
     margin-bottom: 80px;
 }
 
 .testimonials h2 span {
+    display: block;
     color: var(--color-border-secondary);
+    font-size: var(--font-size-64-pixel);
+    line-height: var(--line-height);
+    line-height: 80%;
 }
 
 @media screen and (min-width: 600px) {
@@ -525,7 +536,7 @@ strong {
 
 .authors .grid {
     background: url(../images/Triangles.png);
-    background-size: contain;
+    background-size: 90%;
     background-position: bottom right;
     background-repeat: no-repeat;
 }
@@ -540,6 +551,12 @@ strong {
     margin-top: 0;
     margin-bottom: 80px;
 }
+@media screen and (min-width: 900px) {
+    .authors .grid {
+        background-size: 60%;
+    }
+}
+
 .chapters > .wrapper > .grid {
     column-gap: 80px;
     row-gap: 0px;
@@ -550,7 +567,14 @@ strong {
     margin-bottom: 40px;
     padding-bottom: 40px;
 }
-@media screen and (min-width: 600px) {
+.chapters > .wrapper > .grid .right img, .book img, .authors img {
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    /* .chapters > .wrapper > .grid {
+        grid-template-columns: 60% auto;
+    } */
     .chapters > .wrapper > .grid .right {
         border: none;
         margin-bottom: 0;
@@ -562,6 +586,7 @@ strong {
         background-size: 1px 6px;
         background-repeat: repeat-y;
         background-position: center;
+        /* background-position: 63.5% 50%; */
     }
 }
 
@@ -589,15 +614,14 @@ strong {
     width: 200px;
     margin: auto;
 }
+.chapters .arrow img {
+    width: 100%;
+}
 
 
 .callout {
     text-align: center;
 }
-.callout .button {
-    margin-top: 60px;
-}
-
 .callout p.more {
     margin-top: 80px;
     font-family: var(--font-family-afacad);
@@ -650,6 +674,16 @@ strong {
 .contact .email {
     text-align: right;
 }
+.contact h3 {
+    margin-top: 5px;
+    font-family: var(--font-family-afacad);
+    font-size: var(--font-size-28-pixel);
+    line-height: var(--line-height);
+    font-weight: normal;
+}
+.contact img {
+    padding: 5px;
+}
 .contact .email img {
     width: 140px;
 }
@@ -668,6 +702,7 @@ strong {
     padding: 40px;
     padding-top: 100px;
     margin: 20px;
+    
 }
 
 @media screen and (min-width: 600px) {
@@ -683,16 +718,22 @@ footer {
 }
 footer .grid {
     grid-template-columns: 1fr;
+    margin-bottom: 20px;
 }
 footer img {
-    width: 200px;
+    width: 250px;
     margin: auto;
 }
 footer h3 {
     font-family: var(--font-family-afacad);
     font-size: var(--font-size-20-pixel);
     line-height: var(--line-height);
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
+}
+footer h3.name {
+    font-family: var(--font-family-aldrich);
+    font-size: var(--font-size-20-pixel);
+    line-height: var(--line-height);
 }
 footer ul {
     padding-left: 0;
@@ -702,14 +743,16 @@ footer li {
 }
 footer li a {
     font-family: var(--font-family-afacad);
-    font-size: var(--font-size-16-pixel);
+    font-size: var(--font-size-20-pixel);
     line-height: var(--line-height);
+    display: block;
+    margin-bottom: 10px;
 }
 footer li a, footer li a:link, footer li a:visited {
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
 }
 footer li a:hover {
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
 }
 
 footer .social img {

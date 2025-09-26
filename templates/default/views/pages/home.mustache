@@ -85,8 +85,9 @@
 
 <div class="testimonials">
     <div class="wrapper">
-        <span class="caption">Testimonials</span>
-        <h2>What<br><span>readers</span><br>say about it</h2>
+        <a id="testimonials"></a>
+        <span class="caption">{{page.testimonials.caption}}</span>
+        <h2>{{& page.testimonials.title}}</h2>
 
         <div class="grid grid-211">
         {{#page.testimonials.quotes}}
@@ -110,7 +111,7 @@
         <a id="authors"></a>
         <div class="grid grid-211">
             <div>
-                <span class="caption">Authors</span>
+                <span class="caption">{{page.authors.caption}}</span>
                 <h2>{{page.authors.title}}</h2>
                 <p class="names">{{page.authors.subtitle}}</p>
 
@@ -130,7 +131,7 @@
 <div class="chapters">
     <div class="wrapper">
         <a id="content"></a>
-        <span class="caption">Chapters</span>
+        <span class="caption">{{page.outline.caption}}</span>
         <h2>{{page.outline.title}}</h2>
 
         <div class="grid grid-211">
@@ -172,7 +173,7 @@
         
         <span class="info">{{page.callout.note}}</span>
 
-        <p class="more">Not ready yet? Find free code examples at <a href="https://learn-swift.com/">learn-swift.com</a></p>
+        <p class="more">Not ready yet? Find free code examples at <a href="https://learn-swift.com/"><span class="gradient">learn-swift.com</span></a></p>
     </div>
 </div>
 
@@ -208,13 +209,13 @@
             <div>
                 {{#icons}}
                 <a href="{{link}}" target="_blank">
-                    <img src="{{baseUrl}}/images/social/{{image}}.png" alt="{{link}}">
+                    <img src="{{baseUrl}}/images/social/{{image}}.svg" alt="{{link}}">
                 </a>
                 {{/icons}}
             </div>
             <div>
                 <h3>{{title}}</h3>
-                <p>{{description}}</p>
+                <p>{{& description}}</p>
             </div>
         {{/page.ask.channels}}
         </div>

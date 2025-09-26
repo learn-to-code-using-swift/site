@@ -59,7 +59,8 @@ beta:
             url: "https://theswiftdev.com/assets/learn-to-code-using-swift/sample.pdf"
 
 testimonials:
-    title: "What readers say about it"
+    caption: "Testimonials"
+    title: "What<span class='gradient'>readers</span>say about it"
     quotes:
         - quote: "Whether you're learning Swift or you're seasoned developer, there is something to learn in this book. Tibor and Kitti made an excellent work of gathering pretty much all aspects of the Swift programming language, following the principle of progressive disclosure: you learn only what you need when you need it. The exercises at the end of each chapter oblige you to dive deeper and verify you effectively acquired the concepts presented."
           name: "Sébastien Stormacq"
@@ -80,6 +81,7 @@ testimonials:
 
 
 authors:
+    caption: "Authors"
     title: "Meet the authors"
     subtitle: "Tibor Bödecs & Kitti Bödecs"
     tibor: "Tibor is a seasoned software developer who has been crafting quality software for decades. He became fascinated by Swift years ago — today, he runs a company built around it, is a member of the Server-Side Swift Workgroup, and writes extensively about the language, whether in books or blogs."
@@ -87,6 +89,7 @@ authors:
     summary: "The outcome is this book that offers a reliable, accessible approach to learning Swift, while preserving full technical depth and accuracy."
 
 outline:
+    caption: "Content"
     title: "What's inside the book"
 
     chapters:
@@ -283,12 +286,17 @@ ask:
     subtitle: "We'd love to hear from you"
     channels:
         - title: "Join us on Discord"
-          description: "Want to make an impact? Want to get to know others in the same shoe as you? Join a living community on Discord to learn and shape the book together. Find mates to motivate each other. Ask questions if you get stuck and get free mentoring in exchange for your precious feedback."
+          description: |
+            Want to make an impact?<br>
+            Want to get to know others in the same shoe as you?<br>
+            Join a living community on Discord to learn and shape the book together. Find mates to motivate each other. Ask questions if you get stuck and get free mentoring in exchange for your precious feedback.
           icons: 
             - link: "Discord"
               image: "Discord"
         - title: "Follow us on X, Bluesky and Mastodon"
-          description: "Follow us on social platforms for Swift related content and updates. We’re sharing complementary educational stuff on programming — pieces of info, visuals, and of course sneak peaks into what we’re currently working on."
+          description: |
+            Follow us on social platforms for Swift related content and updates.<br>
+            We’re sharing complementary educational stuff on programming — pieces of info, visuals, and of course sneak peaks into what we’re currently working on.
           icons: 
             - link: "X"
               image: "X"
@@ -297,7 +305,9 @@ ask:
             - link: "Mastodon"
               image: "Mastodon"
         - title: "Prefer to drop an email?"
-          description: "Write us an e-mail to learntocodeusingswift@gmail.com. Send us your thoughts on the book, ask questions , or show us your dog. "
+          description: | 
+            Write us an e-mail to learntocodeusingswift@gmail.com.<br>
+            Send us your thoughts on the book, ask questions , or show us your dog.
           icons:
             
 cta:
