@@ -66,10 +66,18 @@ testimonials:
           name: "Sébastien Stormacq"
           info: "Developer Experience, AWS"
           image: "sebastien"
+        - quote: "I came to Learn To Code Using Swift with some prior knowledge of HTML and CSS, but this book made learning Swift approachable and fun. The explanations are clear, the step-by-step exercises connect the dots quickly, and the balance between concepts and practice really builds confidence. Whether you’re starting out or already have some coding background, this is one of the friendliest and most practical ways to learn Swift."
+          name: "Fanni Harsányi"
+          info: "Product designer"
+          image: "fanni"
         - quote: "I thought programming was too complicated for me, but this course completely changed my attitude. It starts from the basics, explains clearly in every chapter, and builds real knowledge along the way. Now I’m no longer afraid of code—I’m excited to see what else I’ll learn."
           name: "Dániel Horváth"
           info: "Aspiring Swift developer"
           image: "daniel"
+        - quote: "Learn to Code using Swift is a great introduction to Swift development. Whether you're a new programmer, or experienced but new in Swift; this book gets you through how to use Swift. It starts out with basic concepts, and advances into important subjects such as concurrency - all while maintaining beginner-friendliness."
+          name: "Joannis Orlandos"
+          info: "Swift Nerd and consultant"
+          image: "joannis"
 
 
 authors:
